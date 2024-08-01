@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Class Notes</title>
+    <title>Noodl3ing Around</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>My Class Notes</h1>
+        <div class="header-content">
+            <h1>Noodl3ing Around</h1>
+            <buttom class="menu-toggle" onclick="toggleMenu()">☰</buttom></buttom>
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="subpages/academics.html">Academics</a></li>
+                    <li><a href="subpages/projects.html">Projects</a></li>
+                    <li><a href="subpages/about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>Available Notes</h2>
-            <ul>
-                <li><a href="htmlNotes/khanMulti.html" target="_blank">Khan Multi Note</a></li>
-            </ul>
-        </section>
+
     </main>
     <footer>
-        <p>© 2024 Your Name</p>
+        <p>© 2024 Dylan Sheehan, Bates College '26</p>
     </footer>
+    <script>
+        function toggleMenu(){
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('show')
+        }
+    </script>
 </body>
 </html>
 

@@ -1,49 +1,134 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-header, footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu.show {
+    display: block;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    background-color: #e9ecef;
+    text-decoration: none;
 }
 
 main {
-    padding: 1em;
+    padding: 20px;
 }
 
 section {
-    background: #fff;
-    margin: 1em 0;
-    padding: 1em;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
 }
 
-h1, h2 {
-    color: #333;
+section h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+}
+/* Style for the expandable section headers */
+.expander {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007bff;
+    border: 1px solid #ddd;
+    margin-top: 2px;
+    border-radius: 4px;
+    font-size: 1.0em;
+    font-weight:bold;
+    text-align:center;
 }
 
-li {
-    margin: 0.5em 0;
+/* Style for the content sections */
+.content {
+    display: none; /* Initially hidden */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fafafa;
 }
 
-a {
-    text-decoration: none;
-    color: #1a0dab;
+/* Style for the active header */
+.active {
+    background-color: #ccc;
 }
-
-a:hover {
-    text-decoration: underline;
+.table-containter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px;
+}
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+th, td{
+    padding:8px;
+    border: 1px solid #ddd;
+    text-align: center;
 }
 
