@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ch302 Notes</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Chem302</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav id="nav-menu" class="nav-menu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../subpages/academics.html">Academics</a></li>
+            <li><a href="../subpages/projects.html">Projects</a></li>
+            <li><a href="../subpages/about-me.html">About Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main></main>
+    <h2>Statistical Thermodynamics</h2>
+    <p>
+      Chem302, or statistical thermodynamics was the first real upper level
+      course I've taken. It was a great experience to see what upper level
+      learning was like as a freshman.
+    </p>
+    <p>
+      While I was expecting more actual chemistry, seeing concepts from
+      Multivariable and Dif Eq being used in a chemical context was very
+      interesting. Below are 3 of my more interesting homeworks, written in
+      markdown and mathjax using vim as a text editor and Obsidian as the
+      viewing mechanism.
+    </p>
+    <div class="expander">PDFs</div>
+    <div class="content">
+      <object
+        data="../pdfAssignments/2Chem302HW.pdf"
+        type="application/pdf"
+        width="60%"
+        height="400px"
+      >
+        <p>
+          Your browser doesn't support PDFs
+          <a href="../pdfAssignments/2Chem302HW.pdf">Download the PDF</a>.
+        </p>
+      </object>
+      <object
+        data="../pdfAssignments/3Chem302HW.pdf"
+        type="application/pdf"
+        width="60%"
+        height="400px"
+      >
+        <p>
+          Your browser doesn't support PDFs
+          <a href="../pdfAssignments/3Chem302HW.pdf">Download the PDF</a>.
+        </p>
+      </object>
+      <object
+        data="../pdfAssignments/4Chem302HW.pdf"
+        type="application/pdf"
+        width="60%"
+        height="400px"
+      >
+        <p>
+          Your browser doesn't support PDFs
+          <a href="../pdfAssignments/4Chem302HW.pdf">Download the PDF</a>.
+        </p>
+      </object>
+    </div>
+    <p>
+      Below are some class Notes from Days where I covered more of this course.
+      However with the way I used to take notes, I'd take daily notes that had a
+      mix of lectures. This was pretty helpful when I was using markdown, but
+      proved limiting over time.
+    </p>
+
+    <footer>
+      <p>&copy; 2024 Dylan Sheehan, Bates College '26</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("nav-menu");
+        menu.classList.toggle("show");
+      }
+      document.querySelectorAll(".expander").forEach((expander) => {
+        expander.addEventListener("click", () => {
+          const content = expander.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+            expander.classList.remove("active");
+          } else {
+            content.style.display = "block";
+            expander.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

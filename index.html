@@ -1,57 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noodl3ing Around</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="header-content">
-            <h1>Noodl3ing Around</h1>
-            <buttom class="menu-toggle" onclick="toggleMenu()">☰</buttom></buttom>
-            <nav id="nav-menu" class="nav-menu">
-                <ul>
-                    <li><a href="subpages/academics.html">Academics</a></li>
-                    <li><a href="subpages/projects.html">Projects</a></li>
-                    <li><a href="subpages/about-me.html">About Me</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="header-content">
+        <h1>Noodl3ing Around</h1>
+        <buttom class="menu-toggle" onclick="toggleMenu()">☰</buttom>
+        <nav id="nav-menu" class="nav-menu">
+          <ul>
+            <li><a href="subpages/academics.html">Academics</a></li>
+            <li><a href="subpages/projects.html">Projects</a></li>
+            <li><a href="subpages/about-me.html">About Me</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <section class="intro">
-            <h1>Welcome to My Website!</h1>
-            <img src="./pictures/Tux.png" alt="OOPS!!!">
-            <p>Hello! I'm Dylan Sheehan a chemistry / physics / engineering student at Bates College. This website is very work in progress and will be updated a lot in the near future!</p>
-        </section>
+      <section class="intro">
+        <h1>Welcome to My Website!</h1>
+        <img src="./pictures/Tux.png" alt="OOPS!!!" />
+        <p>
+          Hello! I'm Dylan Sheehan a chemistry / physics / engineering student
+          at Bates College. This website is very work in progress and will be
+          updated a lot in the near future!
+        </p>
+      </section>
 
-        <section class="featured">
-            <h2>Latest Updates</h2>
-            <ul>
-                <li><a href="subpages/academics.html">Writing the base of my academic pages</a></li>
-            </ul>
-        </section>
+      <section class="featured">
+        <h2>Latest Updates</h2>
+        <ul>
+          <li>
+            <a href="subpages/academics.html"
+              >Writing the base of my academic pages</a
+            >
+          </li>
+        </ul>
+      </section>
 
-
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <a href=https://www.linkedin.com/in/dylan-sheehan-13667a252>LinkedIn</a> 
-            <a href=dsheehan2@bates.edu>Academic Email</a>
-            860-964-7542
-
-        </section>
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <a href="https://www.linkedin.com/in/dylan-sheehan-13667a252"
+          >LinkedIn</a
+        >
+        <a href="dsheehan2@bates.edu">Academic Email</a>
+        860-964-7542
+      </section>
     </main>
     <footer>
-        <p>© 2024 Dylan Sheehan, Bates College '26</p>
+      <p>© 2024 Dylan Sheehan, Bates College '26</p>
     </footer>
     <script>
-        function toggleMenu(){
-            var menu = document.getElementById('nav-menu');
-            menu.classList.toggle('show')
-        }
+      function toggleMenu() {
+        var menu = document.getElementById("nav-menu");
+        menu.classList.toggle("show");
+      }
     </script>
-</body>
+  </body>
 </html>
-
