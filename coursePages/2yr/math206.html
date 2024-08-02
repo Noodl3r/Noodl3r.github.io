@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dylan's Site</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Multivariable Calculus</h1>
+        <buttom class="menu-toggle" onclick="toggleMenu()">☰</buttom>
+        <nav id="nav-menu" class="nav-menu">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/subpages/academics.html">Academics</a></li>
+            <li><a href="/subpages/projects.html">Projects</a></li>
+            <li><a href="/subpages/about-me.html">About Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="notes">
+        <h2>Funny quip about the course</h2>
+        <p>
+          This page will host information regarding COURSE NAME. Such as large
+          assignments, my cumulative note page and the like.
+        </p>
+        <div class="expander">Note Document</div>
+        <div class="content">
+          <p></p>
+          <object
+            data="/pdfNotes/Math211Notes.pdf"
+            type="application/pdf"
+            width="80%"
+            height="600px"
+          >
+            <p>
+              Your browser does not support PDFs.
+              <a href="/pdfNotes/Math211Notes.pdf">Download the PDF</a>.
+            </p>
+          </object>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 Dylan Sheehan Bates '26</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("nav-menu");
+        menu.classList.toggle("show");
+      }
+      document.querySelectorAll(".expander").forEach((expander) => {
+        expander.addEventListener("click", () => {
+          const content = expander.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+            expander.classList.remove("active");
+          } else {
+            content.style.display = "block";
+            expander.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
