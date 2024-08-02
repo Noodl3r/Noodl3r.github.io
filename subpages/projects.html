@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Projects</h1>
+        <buttom class="menu-toggle" onclick="toggleMenu()">☰</buttom>
+        <nav id="nav-menu" class="nav-menu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="notes">
+        <h2>Here's a List of my Projects!</h2>
+        <p>
+          This page will mostly just be used to show off the projects I'm
+          currently working on,
+        </p>
+
+        <div class="expander">Vim / LaTeX Config</div>
+        <div class="content">
+          <p>
+            At Bates, I'm most well known for being the guy who takes notes on
+            his laptop.
+          </p>
+
+          <p>
+            In a room filled with iPads and notability tablets, I am simply much
+            more comfortable on my Dell Inspirion. This is largely because of x
+            software packages,
+          </p>
+          <ul style="list-style-type: circle">
+            <li><h2>Vim</h2></li>
+            <p>
+              Vim is my editor of choice for multiple reasons. However, between
+              the blazingly fast run time, low system usage, minimal bloat, and
+              amazing configuration options there's simply no other valid
+              option.
+            </p>
+            <li><h2>Live-LaTeX-Preview</h2></li>
+            <p>
+              This beautiful plugin, located at
+              <a href="https://github.com/xuhdev/vim-latex-live-preview"
+                >this link</a
+              >
+              is incredibly useful for giving you the ability to very quickly
+              compile and manage your current LaTeX documents in a live preview.
+              This proves instrumental while taking in class notes. Solutions
+              like VimTex are able to do this aswell, however, they're bloated
+              and have many many options. I prefer my LaTeX previewer to only
+              help me preview LaTeX, instead of trying to lint my files.
+            </p>
+            <li><h2>Zathura</h2></li>
+            <p>
+              Zathura is a well known PDF viewer. It supports vim keybindings,
+              works very well with kitty (my terminal) and is incredibly fast. I
+              can also configure it with pywal. This simple PDF viewer is
+              beautiful, elegant, and fast. There's nothing else to look for.
+            </p>
+            <li><h2>Ultisnips</h2></li>
+            <p>
+              Ultisnips is my method of managing snippets across all my
+              programming languages. But it's especially helpful when writing
+              LaTeX.
+            </p>
+            <p>
+              With Ultisnips, a rather complex equation can be written with very
+              few actual keystrokes. Thus making it possible to focus on note
+              taking instead of boilerplate. This also proves very helpful while
+              writing lab reports, because any time writing "non-content" is
+              wasted time.
+            </p>
+            <p>
+              For example, in order to display the general equation for internal
+              energy one would have to write all of this in LaTeX.
+            </p>
+            \[ U = \langle E \rangle = k_BT^2 \left( \frac{\partial \ln
+            Q}{\partial T} \right) _V = k_BT^2 \frac{1}{Q} \left( \frac{\partial
+            Q}{\partial T} \right) _V \]
+            <pre>
+\[ U = \langle E \rangle = k_BT^2 \left(\frac{\partial \ln Q}{\partial T}\right)_V =
+k_BT^2 \frac{1}{Q} \left(\frac{\partial Q}{\partial T}\right)_V \]
+            </pre>
+            <p>
+              This is terrible! What may take someone 15 seconds by hand, would
+              take me more than a minute due to all of this boilerplate! But
+              with the snippet library that I wrote,This can be done much
+              faster.
+            </p>
+            <pre>
+            qoU=rmsE(TAB)= k_BTsrlr(TAB)pa1lnQ(TAB)T(TAB)_V=k_BTsr 1/Q lr(TAB)paQT(TAB)_V
+            </pre>
+            <p>
+              Now while this may not seem too much better, it absolutely is. And
+              since you're able to see the text being replaced live with vim,
+              it's much more intuitive. This method also has essentially no
+              wasted character inputs.
+            </p>
+            <p>So for a video demo :</p>
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/x3eYfhue2pE?si=uefK6mFvI4CBMImt"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 Dylan Sheehan Bates '26</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("nav-menu");
+        menu.classList.toggle("show");
+      }
+      document.querySelectorAll(".expander").forEach((expander) => {
+        expander.addEventListener("click", () => {
+          const content = expander.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+            expander.classList.remove("active");
+          } else {
+            content.style.display = "block";
+            expander.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
