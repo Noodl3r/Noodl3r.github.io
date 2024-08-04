@@ -37,6 +37,37 @@
             At Bates, I'm most well known for being the guy who takes notes on
             his laptop.
           </p>
+          <p>
+            Throughout my life I always struggled with terrible handwriting due
+            to a nerve impingement in my dominant arm. As such, during my
+            freshman year of college I decided that if I was going to start
+            taking notes during my courses I would need an alternative method of
+            working.
+          </p>
+          <p>
+            So after doing some searching for a solution to my predicament I
+            found some very interesting blogs and youtube videos, namely
+            <a href="https://castel.dev/post/lecture-notes-1"
+              >Gilles Castel's Blog
+            </a>
+            (Rest in Peace ✝) and some helpful
+            <a href="https://www.youtube.com/watch?v=DOtM1mrWjUo&t=1044s">
+              youtube videos</a
+            >
+            introducing me to \(LaTeX\).This proved to be a massive turning
+            point for me. By using Ultisnips and Vim I could quickly take course
+            notes in beautiful formats at speeds comparable to hand writing.
+          </p>
+          <p>
+            However, I chose to wait for full adaptation of this set up as I was
+            not sure if it would be sustainable in a college setting. So I
+            instead chose to use Obsidian, a proprietary markdown viewer with
+            MathJax support. After a full year of exclusively using this method,
+            I've made the full switch to Vim and \(LaTeX\). I look to create a
+            guide or two on how I did this, as my ultimate work flow is slightly
+            different than those mentioned earlier. But those will come later
+            on.
+          </p>
 
           <p>
             In a room filled with iPads and notability tablets, I am simply much
@@ -91,19 +122,20 @@
             \[ U = \langle E \rangle = k_BT^2 \left( \frac{\partial \ln
             Q}{\partial T} \right) _V = k_BT^2 \frac{1}{Q} \left( \frac{\partial
             Q}{\partial T} \right) _V \]
-            <pre>
-\[ U = \langle E \rangle = k_BT^2 \left(\frac{\partial \ln Q}{\partial T}\right)_V =
-k_BT^2 \frac{1}{Q} \left(\frac{\partial Q}{\partial T}\right)_V \]
-            </pre>
+            <pre><code>
+              \[ U = \langle E \rangle = k_BT^2 \left(\frac{\partial \ln
+              Q}{\partial T}\right)_V = k_BT^2 \frac{1}{Q} \left(\frac{\partial
+              Q}{\partial T}\right)_V \]
+              </code></pre>
             <p>
               This is terrible! What may take someone 15 seconds by hand, would
               take me more than a minute due to all of this boilerplate! But
               with the snippet library that I wrote,This can be done much
               faster.
             </p>
-            <pre>
+            <pre><code>
             qoU=rmsE(TAB)= k_BTsrlr(TAB)pa1lnQ(TAB)T(TAB)_V=k_BTsr 1/Q lr(TAB)paQT(TAB)_V
-            </pre>
+            </code></pre>
             <p>
               Now while this may not seem too much better, it absolutely is. And
               since you're able to see the text being replaced live with vim,
