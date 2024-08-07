@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Assignments</title>
+    <title>Dylan's Site</title>
     <link rel="stylesheet" href="../styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
   </head>
   <body>
     <header>
@@ -27,13 +28,11 @@
       <section id="notes">
         <h2>Second Year, Vim and \(\LaTeX\)</h2>
         <p>
-          This second year will likely be my most intense. My third year will be
-          marked by the thesis, and my first year was spent throwing a ball back
-          and fourth in a pit. This year is entirely devoted to learning as much
-          as possible in all of my courses and internship hunting for the
-          Summer. Maintaining a high GPA in the face of all the academic
-          pressure is also of high importance in order to qualify for the
-          Columbia transfer program in computer engineering.
+          This year is marked by many courses. This course load is primarily due
+          to my triple major, courses like Poetry and intro python were chosen
+          to make the transfer requirements for Columbia's 3-2 Engineering
+          program. However I'm really excited to study these topics as I love
+          interdisciplinary learning.
         </p>
         <div class="expander">Courses</div>
         <div class="content">
@@ -110,8 +109,8 @@
         <h2>First Summer</h2>
         <p>
           My Summer was primarily dominated by the research project, however I
-          still found time to work on a lot of math. I was able to learn a lot
-          of multivariable calc as well as a ton of proof writing. Below are my
+          still found time to work on math. I was able to learn a lot of
+          multivariable calc as well as a ton of proof writing. Below are my
           Khan Academy work on Multi and my independent studying of Proofs by
           Jay Cummings
         </p>
@@ -147,12 +146,11 @@
 
         <h2>First Year, Obsidian and MathJax</h2>
         <p>
-          Being my first year of college I took this year easy academically,
-          rather than skipping past all the courses I had AP credit for, I chose
-          to retake intro physics and Calc 2 due to having self studied these
-          courses in high school. I did however chose to skip the intro gen chem
-          sequence as I was not premed and had competed in Chemistry Olympiads
-          through high school.
+          Being my first year of college, I took this year easy academically.
+          Rather than skipping past all the courses I had AP credit for, I chose
+          to retake intro physics and Calc 2 due to self-studying these courses
+          . However, I did skip the intro gen chem sequence as I had competed in
+          Chem Olympiads.
         </p>
         <p>
           This summer I also had my first research job. I worked on CUDA
@@ -205,44 +203,11 @@
             </tbody>
           </table>
         </div>
-        <div class="expander">Chem302</div>
-        <div class="content">
-          <h1>Statistical Thermodynamics</h1>
-          <p>
-            Chem302, or statistical thermodynamics was the first real upper
-            level course I've taken. It was a great experience to see what upper
-            level learning was like as a freshman.
-          </p>
-          <p>
-            While I was expecting more actual chemistry, seeing concepts from
-            Multivariable and Dif Eq being used in a chemical context was very
-            interesting. Below are 3 of my more interesting homeworks, written
-            in markdown and mathjax using vim as a text editor and Obsidian as
-            the viewing mechanism.
-          </p>
-        </div>
       </section>
     </main>
     <footer>
       <p>© 2024 Dylan Sheehan Bates '26</p>
     </footer>
-    <script>
-      function toggleMenu() {
-        var menu = document.getElementById("nav-menu");
-        menu.classList.toggle("show");
-      }
-      document.querySelectorAll(".expander").forEach((expander) => {
-        expander.addEventListener("click", () => {
-          const content = expander.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-            expander.classList.remove("active");
-          } else {
-            content.style.display = "block";
-            expander.classList.add("active");
-          }
-        });
-      });
-    </script>
+    <script src="/scripts/navMenu.js"></script>
   </body>
 </html>

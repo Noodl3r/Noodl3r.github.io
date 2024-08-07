@@ -34,9 +34,6 @@ header {
     position: relative;
 }
 
-header h1 {
-    margin: 0;
-}
 
 .menu-toggle {
     background: none;
@@ -94,6 +91,10 @@ section {
 section h2 {
     border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
+}
+section h1 {
+    border-bottom: 1px solid #007bff;
+    padding-bottom : 5px;
 }
 
 footer {
@@ -184,11 +185,11 @@ a:active {
       height: 100%;
   }
   pre {
-    background-color: #f4f4f4;
-    padding: 10px;
+    background-color: #008080;
+    padding: 8px;
     border-radius: 5px;
     overflow-x: scroll;
-    text-align: right;
+    text-align: left;
   white-space: pre;
   word-break: normal;
   word-spacing: normal;

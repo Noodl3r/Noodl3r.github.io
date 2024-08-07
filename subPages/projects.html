@@ -7,6 +7,7 @@
     <title>Projects</title>
     <link rel="stylesheet" href="../styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
   </head>
   <body>
     <header>
@@ -31,6 +32,18 @@
           currently working on,
         </p>
 
+        <div class="expander">Chat App, AnonyMoose</div>
+        <div class="content">
+            <p>
+            Bates used to be home to an anonymous messaging app called BlindTiger, this app carried no accounts, no fluff, and just simple up and down votes on posts with nothing else. This rounded with a very light moderation filter allowed for a nice little application that was used pretty ubiquitously among the student population.
+            </p>
+            <p>
+            Unfortunately, this of course had its issues. After people flooded the app with constant fighting over Zionism the college decided to block the website from the college's WiFi. So why not fill the gap that now exists among the student population. While learning some more web utilities. 
+            </p>
+            <p>
+            I'm currently working on self-hosting the website. I will use an older acer notebook as a headless server that exclusively functions to store logins and message histories. The notebook is running a standard Nix OS Server config. This is primarily being done to learn more about web hosting as well as web UI/UX development. But I also think it's important to expand the range of available platforms people have to express their opinions and ideas.  
+            </p>
+        </div>
         <div class="expander">Vim / LaTeX Config</div>
         <div class="content">
           <p>
@@ -50,11 +63,11 @@
             <a href="https://castel.dev/post/lecture-notes-1"
               >Gilles Castel's Blog
             </a>
-            (Rest in Peace ✝) and some helpful
+            (Rest in Peace ✝) and the journals by
             <a href="https://www.youtube.com/watch?v=DOtM1mrWjUo&t=1044s">
-              youtube videos</a
+              Senior Mars</a
             >
-            introducing me to \(LaTeX\).This proved to be a massive turning
+            which introduced me to \(LaTeX\).This proved to be a massive turning
             point for me. By using Ultisnips and Vim I could quickly take course
             notes in beautiful formats at speeds comparable to hand writing.
           </p>
@@ -71,8 +84,8 @@
 
           <p>
             In a room filled with iPads and notability tablets, I am simply much
-            more comfortable on my Dell Inspirion. This is largely because of x
-            software packages,
+            more comfortable on my Dell Inspirion. This is largely because of
+            these software packages,
           </p>
           <ul style="list-style-type: circle">
             <li><h2>Vim</h2></li>
@@ -122,20 +135,18 @@
             \[ U = \langle E \rangle = k_BT^2 \left( \frac{\partial \ln
             Q}{\partial T} \right) _V = k_BT^2 \frac{1}{Q} \left( \frac{\partial
             Q}{\partial T} \right) _V \]
-            <pre><code>
-              \[ U = \langle E \rangle = k_BT^2 \left(\frac{\partial \ln
-              Q}{\partial T}\right)_V = k_BT^2 \frac{1}{Q} \left(\frac{\partial
-              Q}{\partial T}\right)_V \]
-              </code></pre>
+            <!-- prettier-ignore-start -->
+            <pre><code> \[ U = \langle E \rangle = k_BT^2 \left(\frac{\partial \ln Q}{\partial T}\right)_V = k_BT^2 \frac{1}{Q} \left(\frac{\partial Q}{\partial T}\right)_V \] </code></pre>
+            <!-- prettier-ignore-end -->
             <p>
               This is terrible! What may take someone 15 seconds by hand, would
               take me more than a minute due to all of this boilerplate! But
               with the snippet library that I wrote,This can be done much
               faster.
             </p>
-            <pre><code>
-            qoU=rmsE(TAB)= k_BTsrlr(TAB)pa1lnQ(TAB)T(TAB)_V=k_BTsr 1/Q lr(TAB)paQT(TAB)_V
-            </code></pre>
+            <!-- prettier-ignore-start -->
+            <pre><code> qoU=rmsE(TAB)= k_BTsrlr(TAB)pa1lnQ(TAB)T(TAB)_V=k_BTsr 1/Q lr(TAB)paQT(TAB)_V </code></pre>
+            <!-- prettier-ignore-end -->
             <p>
               Now while this may not seem too much better, it absolutely is. And
               since you're able to see the text being replaced live with vim,
@@ -157,28 +168,66 @@
             </div>
           </ul>
         </div>
+      <div class="expander">Linux Config</div>
+      <div class="content">
+        <p>
+          I started using linux my senior Summer on a Acer notebook with 2Gb of
+          ram and a pentium processor that I found at a pawnshop for 35$. After
+          a few hardware adjustments and a new SSD it could boot but struggled
+          with using Windows 10. So after doing some research on Mint I booted
+          to a live usb with Mint and Cinnamon.
+        </p>
+        <p>
+          After that I've experimented with everything, from essentially fully
+          built distros like PoP! and Garuda, to more barebones distros like
+          Arch. After daily driving Gentoo for my first college semester I
+          decided that the damage to my laptop's battery doing full sys emerges
+          everynight wasn't worth the cool factor. So I've been using Debian
+          since January and I've loved its stability. I'll include my main
+          utlities below.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Operating System</th>
+              <th>Debian 12 Bookworm</th>
+            </tr>
+            <tr>
+              <th>Window Manager</th>
+              <th>I3</th>
+            </tr>
+            <tr>
+              <th>Compositor</th>
+              <th>Picom</th>
+            </tr>
+            <tr>
+              <th>Browser</th>
+              <th>LibreWolf</th>
+            <tr>
+              <th>Drawing Software</th>
+              <th>InkScape</th>
+            </tr>
+            </tr>
+            <tr>
+              <th>Text Editor</th>
+              <th>Vim</th>
+            </tr>
+            <tr>
+              <th>PDF Viewer</th>
+              <th>Zathura</th>
+            </tr>
+            <tr>
+                <th>Video Viewer</th>
+                <th>mpv</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
       </section>
     </main>
     <footer>
       <p>© 2024 Dylan Sheehan Bates '26</p>
     </footer>
-    <script>
-      function toggleMenu() {
-        var menu = document.getElementById("nav-menu");
-        menu.classList.toggle("show");
-      }
-      document.querySelectorAll(".expander").forEach((expander) => {
-        expander.addEventListener("click", () => {
-          const content = expander.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-            expander.classList.remove("active");
-          } else {
-            content.style.display = "block";
-            expander.classList.add("active");
-          }
-        });
-      });
-    </script>
+    <script src="/scripts/navMenu.js"></script>
   </body>
 </html>
