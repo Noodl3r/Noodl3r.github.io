@@ -216,7 +216,7 @@ code {
     max-height: 200px; /* Maximum height */
     width: auto; /* Adjust width within max-width */
     height: auto; /* Adjust height within max-height */
-    margin-left: 60px;
+    margin-left: 10px;
     margin-bottom: 10px;
 }
 
