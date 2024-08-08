@@ -10,7 +10,8 @@ body {
     color: #dee2e6;
     background-color: #1B1E1F;
     font-family: Roboto, sans-serif;
-    margin: 15px;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 @media (max-width:768px){
@@ -210,7 +211,7 @@ code {
 }
 .cassy-drawing{
     max-width: 1000px; /* Maximum width */
-    max-height: 300px; /* Maximum height */
+    max-height: 200px; /* Maximum height */
     width: auto; /* Adjust width within max-width */
     height: auto; /* Adjust height within max-height */
     margin-left: 60px;
