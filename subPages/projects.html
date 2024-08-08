@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
   </head>
+
   <body>
     <header>
       <div class="header-content">
@@ -16,9 +17,9 @@
         <buttom class="menu-toggle" onclick="toggleMenu()">☰</buttom>
         <nav id="nav-menu" class="nav-menu">
           <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/subPages/academics.html">Academics</a></li>
+            <li><a href="/subPages/about-me.html">About Me</a></li>
           </ul>
         </nav>
       </div>
@@ -31,6 +32,7 @@
           This page will mostly just be used to show off the projects I'm
           currently working on,
         </p>
+      </section>
 
         <div class="expander">Chat App, AnonyMoose</div>
         <div class="content">
@@ -87,19 +89,17 @@
             more comfortable on my Dell Inspirion. This is largely because of
             these software packages,
           </p>
-          <ul style="list-style-type: circle">
-            <li><h2>Vim</h2></li>
+            <h2>Vim</h2>
             <p>
               Vim is my editor of choice for multiple reasons. However, between
               the blazingly fast run time, low system usage, minimal bloat, and
               amazing configuration options there's simply no other valid
               option.
             </p>
-            <li><h2>Live-LaTeX-Preview</h2></li>
+            <h2>Live-LaTeX-Preview</h2>
             <p>
-              This beautiful plugin, located at
               <a href="https://github.com/xuhdev/vim-latex-live-preview"
-                >this link</a
+                >This beautiful plugin</a
               >
               is incredibly useful for giving you the ability to very quickly
               compile and manage your current LaTeX documents in a live preview.
@@ -108,14 +108,14 @@
               and have many many options. I prefer my LaTeX previewer to only
               help me preview LaTeX, instead of trying to lint my files.
             </p>
-            <li><h2>Zathura</h2></li>
+            <h2>Zathura</h2>
             <p>
               Zathura is a well known PDF viewer. It supports vim keybindings,
               works very well with kitty (my terminal) and is incredibly fast. I
               can also configure it with pywal. This simple PDF viewer is
               beautiful, elegant, and fast. There's nothing else to look for.
             </p>
-            <li><h2>Ultisnips</h2></li>
+            <h2>Ultisnips</h2>
             <p>
               Ultisnips is my method of managing snippets across all my
               programming languages. But it's especially helpful when writing
@@ -166,7 +166,6 @@
                 allowfullscreen
               ></iframe>
             </div>
-          </ul>
         </div>
       <div class="expander">Linux Config</div>
       <div class="content">
@@ -191,6 +190,10 @@
             <tr>
               <th>Operating System</th>
               <th>Debian 12 Bookworm</th>
+            </tr>
+            <tr>
+                <th>Terminal</th>
+                <th>Kitty</th>
             </tr>
             <tr>
               <th>Window Manager</th>
@@ -223,7 +226,6 @@
           </thead>
         </table>
       </div>
-      </section>
     </main>
     <footer>
       <p>© 2024 Dylan Sheehan Bates '26</p>

@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noodl3ing Around</title>
+    <title>Dylan's Site</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
   </head>
+
   <body>
     <header>
       <div class="header-content">
-        <h1>Noodl3ing Around</h1>
+        <h1>Home</h1>
         <buttom class="menu-toggle" onclick="toggleMenu()">☰</buttom>
         <nav id="nav-menu" class="nav-menu">
           <ul>
@@ -20,26 +23,33 @@
         </nav>
       </div>
     </header>
+
     <main>
       <section class="intro">
-        <h1>Welcome to My Website!</h1>
-        <img src="./pictures/Tux.png" alt="OOPS!!!" />
+        <h2>Dylan's Display</h2>
+        <img
+          src="./pictures/Armadillo.png"
+          alt="OOPS!!!"
+          class="cassy-drawing"
+        />
         <p>
-          Hello! I'm Dylan Sheehan a chemistry / physics / engineering student
-          at Bates College. This website is very work-in-progress and will be
-          updated a lot in the near future!
+          Hello! I'm Dylan Sheehan a 2nd year chemistry / physics / engineering
+          student at Bates College. This website is a host to my projects, daily
+          notes, and a few other things. I'll be using this as a journal and web
+          design sandbox.
+        </p>
+        <p>
+          If you're a person I sent here to look at missed notes, go to the
+          <a href="subPages/academics.html"> academics page</a>
+          and look for your class. Feel free to contact me for clarification
+          about anything or any further inquiry.
         </p>
       </section>
 
       <section class="featured">
         <h2>Latest Updates</h2>
         <ul>
-          <li>
-            <a href="subPages/projects.html">
-              Improving the code base of the website, and discussing future
-              project plans
-            </a>
-          </li>
+          <li>Fixed CSS boiler, changed logo to something much better.</li>
         </ul>
       </section>
 
@@ -66,11 +76,6 @@
     <footer>
       <p>© 2024 Dylan Sheehan, Bates '26</p>
     </footer>
-    <script>
-      function toggleMenu() {
-        var menu = document.getElementById("nav-menu");
-        menu.classList.toggle("show");
-      }
-    </script>
+    <script src="/scripts/navMenu.js"></script>
   </body>
 </html>

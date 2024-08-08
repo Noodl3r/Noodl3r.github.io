@@ -1,7 +1,7 @@
 /* styles.css */
 .intro{
     text-align:center;
-    padding: 20px;
+    padding: 5px;
 }
 body {
     display: flex
@@ -9,8 +9,8 @@ body {
     align-items: center;
     color: #dee2e6;
     background-color: #1B1E1F;
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: Roboto, sans-serif;
+    margin: 15px;
 }
 
 @media (max-width:768px){
@@ -22,9 +22,9 @@ body {
 
 header {
     background-color: #1B1E1F;
-    padding: 10px;
+    padding: 0px;
     position: relative;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
 }
 
 .header-content {
@@ -32,8 +32,11 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-}
+    margin-top : -10px;
+    margin-bottom: -10px;
+    padding-bottom:0px;
 
+}
 
 .menu-toggle {
     background: none;
@@ -49,8 +52,9 @@ header {
     top: 100%;
     background-color: #1B1E1F;
     border: 1px solid #dee2e6;
-    border-radius: 4px;
+    border-radius: 14px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    top: 70px;
 }
 
 .nav-menu.show {
@@ -69,19 +73,20 @@ header {
 
 .nav-menu a {
     display: block;
-    padding: 10px;
+    padding: 11px;
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
+    position: relative;
 }
 
 .nav-menu a:hover {
-    background-color: #e9ecef;
+    background-color: #181b1c;
     text-decoration: none;
 }
 
 main {
-    padding: 50px;
+    padding: 10px;
 }
 
 section {
@@ -158,11 +163,13 @@ a {
 a:hover {
     color: #d93025; /* Red color when hovered */
     text-decoration: underline; /* Underline on hover */
+    border-radius: 13px;
 }
 
 /* Link color when active (clicked) */
 a:active {
     color: #ff0000; /* Red color when active */
+    border-radius: 5px;
 }
 
 .video-container {
@@ -185,7 +192,7 @@ a:active {
       height: 100%;
   }
   pre {
-    background-color: #008080;
+    background-color: #252A33;
     padding: 8px;
     border-radius: 5px;
     overflow-x: scroll;
@@ -198,6 +205,15 @@ a:active {
 code {
     font-family: Consolas, 'Courier New', Courier, monospace;
     font-size: 1em;
-    color: #333;
+    color: #dee2e6;
     display: block;
 }
+.cassy-drawing{
+    max-width: 1000px; /* Maximum width */
+    max-height: 300px; /* Maximum height */
+    width: auto; /* Adjust width within max-width */
+    height: auto; /* Adjust height within max-height */
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
