@@ -12,7 +12,9 @@ body {
     font-family: Roboto, sans-serif;
     margin: 0 auto;
     max-width: 1000px;
+    font-size: 16px;
 }
+
 
 @media (max-width:768px){
     body{
@@ -42,7 +44,7 @@ header {
 .menu-toggle {
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
 }
 
