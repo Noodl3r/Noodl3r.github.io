@@ -13,6 +13,15 @@ body {
     margin: 0 auto;
     max-width: 1000px;
     font-size: 16px;
+    animation: fadeInAnimation 0.3s ;
+}
+@keyframes fadeInAnimation{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -24,10 +33,12 @@ body {
 
 
 header {
+    margin: -5px;
     background-color: #1B1E1F;
-    padding: 0px;
+    padding: 10px 10px;
     position: relative;
     border-bottom: 2px solid #dee2e6;
+    box-shadow: 0 2px 10px rgbt(0,0,0,0.3);
 }
 
 .header-content {
@@ -46,6 +57,17 @@ header {
     border: none;
     font-size: 32px;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    transform: scale(0.95);
+    color: #0056b3;
+}
+
+.menu-toggle.active {
+    transform: scale(0.95);
+    color:#0056b3;
 }
 
 .nav-menu {
@@ -86,6 +108,7 @@ header {
 
 .nav-menu a:hover {
     background-color: #181b1c;
+    transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
 }
 
@@ -94,7 +117,7 @@ main {
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 section h2 {
@@ -123,6 +146,7 @@ footer {
     font-size: 1.0em;
     font-weight:bold;
     text-align:center;
+    transition: max-height 0.5 ease;
 }
 
 /* Style for the content sections */
@@ -133,7 +157,6 @@ footer {
     border-top: none;
     border-radius: 0 0 5px 5px;
     background-color: #1B1E1F;
-
 }
 
 /* Style for the active header */
@@ -165,7 +188,7 @@ a {
 
 /* Link color when hovered */
 a:hover {
-    color: #d93025; /* Red color when hovered */
+    color: #dee2e6; /* Red color when hovered */
     text-decoration: underline; /* Underline on hover */
     border-radius: 13px;
 }
@@ -217,7 +240,6 @@ code {
     max-height: 200px; /* Maximum height */
     width: auto; /* Adjust width within max-width */
     height: auto; /* Adjust height within max-height */
-    margin-left: 10px;
     margin-bottom: 10px;
 }
 
