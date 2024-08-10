@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
- <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -154,7 +154,7 @@
               wasted character inputs.
             </p>
             <p>So for a video demo :</p>
-            <img src="/pictures/realSnippet.gif" alt="OOPS" width = "100%" height = "auto">
+            <img src="/pictures/realSnippet.gif" alt="OOPS" width = "900" height = "auto">
         </div>
       <div class="expander">Linux Config</div>
       <div class="content">
