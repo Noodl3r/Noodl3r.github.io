@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
     max-width: 1000px;
     font-size: 16px;
-    animation: fadeInAnimation 0.3s ;
+    animation: fadeInAnimation 0.5s ;
 }
 @keyframes fadeInAnimation{
     from {
@@ -33,11 +33,11 @@ body {
 
 
 header {
-    margin: -5px;
+    margin: -10px;
     background-color: #1B1E1F;
     padding: 10px 10px;
     position: relative;
-    border-bottom: 2px solid #dee2e6;
+    border-bottom: 2px solid #847b6e;
     box-shadow: 0 2px 10px rgbt(0,0,0,0.3);
 }
 
@@ -47,7 +47,7 @@ header {
     align-items: center;
     position: relative;
     margin-top : -10px;
-    margin-bottom: -10px;
+    margin-bottom: -25px;
     padding-bottom:0px;
 
 }
@@ -122,10 +122,10 @@ section {
 
 section h2 {
     border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 section h1 {
-    border-bottom: 1px solid #007bff;
+    border-bottom: 1px solid #847b6e;
     padding-bottom : 5px;
 }
 
@@ -140,9 +140,9 @@ footer {
     cursor: pointer;
     padding: 8px;
     background-color: #007bff ;
-    border: 1px solid #ddd;
+    border: 1px solid #847b6e;
     margin-top: 8px;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 1.0em;
     font-weight: bold;
     text-align: center;
@@ -151,15 +151,16 @@ footer {
 .content {
     display: none; /* Initially hidden */
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #847b6e;
     border-top: none;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 8px 8px;
     background-color: #1B1E1F;
 }
 
 /* Style for the active header */
 .active {
-    background-color: #1B1E1F;
+      background: linear-gradient(to right, #2a0532, #007bff);
+    border-radius: 8px 8px 0 0;
 }
 .table-containter {
     display: flex;
