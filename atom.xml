@@ -2,11 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Hi, I'm Dylan</title>
 	<link href="https://noodl3r.github.io//atom.xml" rel="self" />
-	<updated>2026-05-20T13:53:58Z</updated>
+	<updated>2026-05-20T17:38:47Z</updated>
 	<author>
 		<name>Noodl3r</name>
 	</author>
 	<id>https://noodl3r.github.io/,2024-01-19:default-atom-feed/</id>
+	<entry>
+		<title>TMUX Sessionizing!</title>
+		<content type="html">&lt;h1 id=&quot;tmuxsessionizing&quot;&gt;TMUX Sessionizing!&lt;/h1&gt;
+
+&lt;p&gt;2026&amp;#8211;05&amp;#8211;20&lt;/p&gt;
+
+&lt;h2 id=&quot;muxandmotivation&quot;&gt;Mux and motivation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/Tang-Nano-9k&quot;&gt; Link to all code &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve always used a ton of bash scripts for my main work flows. From generating homework templates from my LaTeX days to parsing webpages to form my local homework due deadline calenders. But recently as my &lt;a href=&quot;https://www.pcmag.com/reviews/dell-inspiron-16-2-in-1-7640?test_uuid=06f2t2mKxAWPbc1xmAn5J4t&amp;amp;test_variant=B&quot;&gt;Inpirion&lt;/a&gt; has begun dying a slow and painful death after 3 years of use, new problems have emerged.&lt;/p&gt;
+
+&lt;p&gt;With the occasional random poweroffs and inability to sleep without fully shutting off, I&amp;#8217;m not longer able to just leave each of my projects open on a different i3 tags. So I&amp;#8217;ve begun exploring an old rite of passage for tiling window manager using vimmers, &lt;a href=&quot;https://github.com/tmux/tmux/wiki&quot;&gt;TMUX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;My main desire for TMUX comes from it&amp;#8217;s ability to maintain and hold sessions in a small format that can be accessed later (using a script). These persistent sessions are useful for a few reasons :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Quick on the fly customization that you can&amp;#8217;t achieve with standard text based layout sessionizers.&lt;/li&gt;
+&lt;li&gt;Multiple types of multiplexing, whether panes windows or scrolls. Although I typically only ever use panes&lt;/li&gt;
+&lt;li&gt;Better resizing text handling than the built in kitty options.&lt;/li&gt;
+&lt;li&gt;The sessions take up very little space and can be nearly constantly updated or stored using plugins like &lt;a href=&quot;https://github.com/tmux/tmux/wiki&quot;&gt;resurrect&lt;/a&gt; and &lt;a href=&quot;https://github.com/tmux-plugins/tmux-continuum&quot;&gt;continuum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So how do we go about this? The most famous starting point for a sessionizing script would be the well known &lt;a href=&quot;https://github.com/tmux-plugins/tmux-continuum&quot;&gt;Primeagain&lt;/a&gt; script. But this script has a few problems in my opinion,&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The ability to make multiple sessions on the same project seems to be a negative and could only lead to confusion.&lt;/li&gt;
+&lt;li&gt;There&amp;#8217;s no reason to outline multiple entrances into the same directory (using the [tmux] tag doesn&amp;#8217;t improve this).&lt;/li&gt;
+&lt;li&gt;It&amp;#8217;s lacking the ability to quickly pull from remote repos / make new sessions in new local directories.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So here I can introduced an improved sessionizing script that fulfills the original goals of the primeagen&amp;#8217;s script while being just slightly longer.&lt;/p&gt;
+
+&lt;p&gt;Here you have a few options and improvements :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Paths are cleaned up to be shorter and cleaner&lt;/li&gt;
+&lt;li&gt;You can directly clone any codeberg, github, or gitlab repo just by directly entering it into the fzf field, where you can then select any destination from the home / current directory.&lt;/li&gt;
+&lt;li&gt;If an active session exists in the parent directory to one you are looking,&lt;/li&gt;
+&lt;li&gt;No need for a config file!&lt;/li&gt;
+&lt;/ul&gt;</content>
+		<link href="https://noodl3r.github.io//Tmux-Sessionizer"/>
+		<id>https://noodl3r.github.io//Tmux-Sessionizer</id>
+		<updated>2026-05-20T10:00:00Z</updated>
+		<published>2026-05-20T10:00:00Z</published>
+	</entry>
 	<entry>
 		<title>Starting with the Tang 9k FPGA.</title>
 		<content type="html">&lt;h1 id=&quot;startingwiththetang9kfpga.&quot;&gt;Starting with the Tang 9k FPGA.&lt;/h1&gt;

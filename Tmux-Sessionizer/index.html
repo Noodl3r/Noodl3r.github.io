@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>TMUX Sessionizing!</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+    />
+    <link
+      href="/atom.xml"
+      type="application/atom+xml"
+      rel="alternate"
+      title="Atom feed for blog posts"
+    />
+    <link
+      href="/rss.xml"
+      type="application/rss+xml"
+      rel="alternate"
+      title="RSS feed for blog posts"
+    />
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+
+  <nav>
+    <a href="/">home</a>
+    <a href="/about">about</a>
+    <a href="/projects">projects</a>
+    <!-- <a href="/feed.rss">rss</a> -->
+  </nav>
+
+  <main></main>
+</html>
+<h1 id="tmuxsessionizing">TMUX Sessionizing!</h1>
+
+<p>2026&#8211;05&#8211;20</p>
+
+<h2 id="muxandmotivation">Mux and motivation</h2>
+
+<p><a href="https://github.com/Noodl3r/Tang-Nano-9k"> Link to all code </a></p>
+
+<p>I&#8217;ve always used a ton of bash scripts for my main work flows. From generating homework templates from my LaTeX days to parsing webpages to form my local homework due deadline calenders. But recently as my <a href="https://www.pcmag.com/reviews/dell-inspiron-16-2-in-1-7640?test_uuid=06f2t2mKxAWPbc1xmAn5J4t&amp;test_variant=B">Inpirion</a> has begun dying a slow and painful death after 3 years of use, new problems have emerged.</p>
+
+<p>With the occasional random poweroffs and inability to sleep without fully shutting off, I&#8217;m not longer able to just leave each of my projects open on a different i3 tags. So I&#8217;ve begun exploring an old rite of passage for tiling window manager using vimmers, <a href="https://github.com/tmux/tmux/wiki">TMUX</a></p>
+
+<p>My main desire for TMUX comes from it&#8217;s ability to maintain and hold sessions in a small format that can be accessed later (using a script). These persistent sessions are useful for a few reasons :</p>
+
+<ul>
+<li>Quick on the fly customization that you can&#8217;t achieve with standard text based layout sessionizers.</li>
+<li>Multiple types of multiplexing, whether panes windows or scrolls. Although I typically only ever use panes</li>
+<li>Better resizing text handling than the built in kitty options.</li>
+<li>The sessions take up very little space and can be nearly constantly updated or stored using plugins like <a href="https://github.com/tmux/tmux/wiki">resurrect</a> and <a href="https://github.com/tmux-plugins/tmux-continuum">continuum</a></li>
+</ul>
+
+<p>So how do we go about this? The most famous starting point for a sessionizing script would be the well known <a href="https://github.com/tmux-plugins/tmux-continuum">Primeagain</a> script. But this script has a few problems in my opinion,</p>
+
+<ul>
+<li>The ability to make multiple sessions on the same project seems to be a negative and could only lead to confusion.</li>
+<li>There&#8217;s no reason to outline multiple entrances into the same directory (using the [tmux] tag doesn&#8217;t improve this).</li>
+<li>It&#8217;s lacking the ability to quickly pull from remote repos / make new sessions in new local directories.</li>
+</ul>
+
+<p>So here I can introduced an improved sessionizing script that fulfills the original goals of the primeagen&#8217;s script while being just slightly longer.</p>
+
+<p>Here you have a few options and improvements :</p>
+
+<ul>
+<li>Paths are cleaned up to be shorter and cleaner</li>
+<li>You can directly clone any codeberg, github, or gitlab repo just by directly entering it into the fzf field, where you can then select any destination from the home / current directory.</li>
+<li>If an active session exists in the parent directory to one you are looking,</li>
+<li>No need for a config file!</li>
+</ul>
+<footer role="contentinfo">
+  <!-- <hr /> -->
+  <!-- <h3 id="menu">Menu Navigation</h3> -->
+  <!-- <ul> -->
+  <!--   <li><a href="/">Home</a></li> -->
+  <!--   <li><a href="/about">About</a></li> -->
+  <!--   <li><a href="/websites">Websites</a></li> -->
+  <!--   <li><a href="https://git.sr.ht/~bt/barf">Source Code</a></li> -->
+  <!-- </ul> -->
+  <small>
+    Built with <a href="https://barf.btxx.org">barf</a>. <br />
+    The <a href="https://noodl3r.github.io">code for this site</a> is MIT.
+  </small>
+</footer>
