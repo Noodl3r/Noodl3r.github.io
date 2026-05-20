@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Hi, I'm Dylan</title>
+		<link>https://noodl3r.github.io//rss.xml</link>
+		<description>Feed description here</description>
+		<lastBuildDate>Wed, 20 May 2026 17:53:58 +0000</lastBuildDate>
+		<pubDate>Wed, 20 May 2026 17:53:58 +0000</pubDate>
+		<generator>Custom RSS Generator</generator>
+		<ttl>1800</ttl>
+		<item>
+			<title>Starting with the Tang 9k FPGA.</title>
+			<description>&lt;h1 id=&quot;startingwiththetang9kfpga.&quot;&gt;Starting with the Tang 9k FPGA.&lt;/h1&gt;
+
+&lt;p&gt;2026&amp;#8211;03&amp;#8211;23&lt;/p&gt;
+
+&lt;h2 id=&quot;firstpurchasesandinspiration:&quot;&gt;First Purchases and Inspiration :&lt;/h2&gt;
+
+&lt;p&gt;After 2 semesters of courses covering FPGA and verilog development in computer architecture, I&amp;#8217;ve finally decided to purchase my own Tang Nano 9k to start on a couple of extracurricular projects.&lt;/p&gt;
+
+&lt;h2 id=&quot;whythetangnano9k&quot;&gt;Why the Tang Nano 9k?&lt;/h2&gt;
+
+&lt;p&gt;The Tang Nano 9k is frequently compared to it&amp;#8217;s slightly larger brother, the 20k. But the difference between the two is not significant enough to warrant the extra 3 weeks of delivery I would have had to wait if I had purchased that.&lt;/p&gt;
+
+&lt;h2 id=&quot;theplan&quot;&gt;The Plan&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#8217;ll start by implementing the heavily reduced instruction set defined in the tutorials by &lt;a href=&quot;https://learn.lushaylabs.com/getting-setup-with-the-tang-nano-9k/&quot;&gt;Lushay Labs&lt;/a&gt;.&lt;/p&gt;</description>
+			<link>https://noodl3r.github.io//starting-with-fpga</link>
+			<guid isPermaLink="false">https://noodl3r.github.io//starting-with-fpga</guid>
+			<pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>The first day with the Tang Nano 9K</title>
+			<description>&lt;h1 id=&quot;thefirstdaywiththetangnano9k&quot;&gt;The first day with the Tang Nano 9K&lt;/h1&gt;
+
+&lt;p&gt;2026&amp;#8211;03&amp;#8211;28&lt;/p&gt;
+
+&lt;h2 id=&quot;gettingstarted&quot;&gt;Getting started!&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/Tang-Nano-9k&quot;&gt; Link to all code &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So the board has arrived! But I can&amp;#8217;t be bothered to use the proprietary IDE / toolchain that the brand provides. So instead, I&amp;#8217;ll be using the &lt;a href=&quot;https://github.com/YosysHQ/oss-cad-suite-build/&quot;&gt;oss-cad-suite&lt;/a&gt; to generate bitstreams then &lt;a href=&quot;https://github.com/trabucayre/openFPGALoader&quot;&gt;openFPGALoader&lt;/a&gt; to program the Tang Nano.&lt;/p&gt;
+
+&lt;p&gt;But in other news, I was able to get the whole thing working and get a nice blink / counter on the FPGA. Next up will be properly soldering it and tying it to some LED&amp;#8217;s on a breadboard.&lt;/p&gt;</description>
+			<link>https://noodl3r.github.io//1st-day-with-fpga</link>
+			<guid isPermaLink="false">https://noodl3r.github.io//1st-day-with-fpga</guid>
+			<pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+		</item>
+</channel>
+</rss>

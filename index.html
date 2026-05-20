@@ -1,84 +1,106 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dylan's Site</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>Hi, I'm Dylan</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+    />
+    <link
+      href="/atom.xml"
+      type="application/atom+xml"
+      rel="alternate"
+      title="Atom feed for blog posts"
+    />
+    <link
+      href="/rss.xml"
+      type="application/rss+xml"
+      rel="alternate"
+      title="RSS feed for blog posts"
+    />
+    <link rel="stylesheet" href="/public/style.css" />
   </head>
 
-  <body>
-    <header>
-      <div class="header-content">
-        <h1>Home</h1>
-        <buttom class="menu-toggle" onclick="toggleMenu()">☰</buttom>
-        <nav id="nav-menu" class="nav-menu">
-          <ul>
-            <li><a href="subPages/academics.html">Academics</a></li>
-            <li><a href="subPages/projects.html">Projects</a></li>
-            <li><a href="subPages/about-me.html">About Me</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <nav>
+    <a href="/">home</a>
+    <a href="/about">about</a>
+    <a href="/projects">projects</a>
+    <!-- <a href="/feed.rss">rss</a> -->
+  </nav>
 
-    <main>
-      <section class="intro">
-        <h2>Dylan's Display</h2>
-        <img
-          src="./pictures/Armadillo.png"
-          alt="OOPS!!!"
-          class="cassy-drawing"
-        />
-        <p>
-          Hello! I'm Dylan Sheehan a 2nd year chemistry / physics / engineering
-          student at Bates College. This website is a host to my projects, daily
-          notes, and a few other things. I'll be using this as a journal and web
-          design sandbox.
-        </p>
-        <p>
-          If I sent you here to look at missed notes, go to
-          <a href="subPages/academics.html"> academics page</a>
-          and look for your class. Feel free to contact me for clarification
-          about anything or any further inquiry.
-        </p>
-      </section>
-
-      <section class="featured">
-        <h2>Latest Updates</h2>
-        <ul>
-          <li>
-            Added some CSS animations and made stuff prettier. Fixing typos
-            again. Looking to add more projects soon.
-          </li>
-        </ul>
-      </section>
-
-      <section class="contact">
-        <h2>Contact Me</h2>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/dylan-sheehan-13667a252"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/Noodl3r">Github</a>
-          </li>
-          <li>
-            <a href="mailto:dsheehan@bates.edu">Academic Email</a>
-          </li>
-          <li>
-            <a href="mailto:echelon.r6s@gmail.com">Personal Email</a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <p>© 2024 Dylan Sheehan, Bates '26</p>
-    </footer>
-    <script src="/scripts/navMenu.js"></script>
-  </body>
+  <main></main>
 </html>
+<h1 id="hiimdylan">Hi, I&#8217;m Dylan</h1>
+
+<p>This is primarily a home to a few blog posts about projects, workflow, and career development.</p>
+
+<h3 id="articles">Articles</h3>
+
+<p><!-- The entire build script is >170 lines of shell. -->
+<!---->
+<!-- It could almost be called "suckless", but probably isn't. It was created for those focused on writing, not tinkering. -->
+<!---->
+<!-- You can learn more by reading the [official README](https://git.sr.ht/~bt/barf). -->
+<!---->
+<!-- **barf** = blogs are really fun -->
+<!---->
+<!-- --- -->
+<!---->
+<!-- ### Get setup in 2 minutes -->
+<!---->
+<!-- **Install dependencies:** -->
+<!---->
+<!-- For Linux (Alpine example): -->
+<!---->
+<!--     sudo apk add rsync coreutils cmake -->
+<!---->
+<!-- For macOS: -->
+<!---->
+<!--     brew install rsync coreutils gnu-sed cmake -->
+<!---->
+<!-- For OpenBSD: -->
+<!---->
+<!--     doas pkg_add coreutils gsed cmake gcc -->
+<!---->
+<!-- **Build MultiMarkdown** -->
+<!---->
+<!-- ``` -->
+<!-- git clone https://github.com/fletcher/MultiMarkdown-6.git -->
+<!-- cd MultiMarkdown-6 -->
+<!-- sudo cmake . -DCMAKE_BUILD_TYPE=Release -->
+<!-- sudo make -->
+<!-- sudo make install -->
+<!-- ``` -->
+<!---->
+<!-- **Clone barf:** -->
+<!---->
+<!--     git clone https://git.sr.ht/~bt/barf -->
+<!---->
+<!-- 1. Open project, change the `domain` variable at the top of the core barf file -->
+<!-- 2. Run: `make build` -->
+<!-- 3. Upload the contents of `build` to your server! -->
+<!-- 4. Profit? -->
+<!---->
+<!-- --- --></p>
+<ul>
+<li>2026-03-28 &middot; <a href="1st-day-with-fpga/">The first day with the Tang Nano 9K</a></li>
+<li>2026-03-23 &middot; <a href="starting-with-fpga/">Starting with the Tang 9k FPGA.</a></li>
+</ul>
+<footer role="contentinfo">
+  <!-- <hr /> -->
+  <!-- <h3 id="menu">Menu Navigation</h3> -->
+  <!-- <ul> -->
+  <!--   <li><a href="/">Home</a></li> -->
+  <!--   <li><a href="/about">About</a></li> -->
+  <!--   <li><a href="/websites">Websites</a></li> -->
+  <!--   <li><a href="https://git.sr.ht/~bt/barf">Source Code</a></li> -->
+  <!-- </ul> -->
+  <small>
+    Built with <a href="https://barf.btxx.org">barf</a>. <br />
+    The <a href="https://noodl3r.github.io">code for this site</a> is MIT.
+  </small>
+</footer>

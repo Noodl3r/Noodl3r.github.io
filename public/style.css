@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  color-scheme: light dark;
+}
+body {
+  font-family: "JetBrains Mono", monospace;
+  line-height: 1.33;
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 1rem;
+}
+img {
+  max-width: 100%;
+}
+pre {
+  border: 1px solid;
+  overflow: auto;
+  padding: 5px;
+}
+.footnotes {
+  font-size: 90%;
+}
+
+nav {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--text);
+}
