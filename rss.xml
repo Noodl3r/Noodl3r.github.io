@@ -4,10 +4,23 @@
 		<title>Hi, I'm Dylan</title>
 		<link>https://noodl3r.github.io//rss.xml</link>
 		<description>Feed description here</description>
-		<lastBuildDate>Thu, 21 May 2026 18:41:04 +0000</lastBuildDate>
-		<pubDate>Thu, 21 May 2026 18:41:04 +0000</pubDate>
+		<lastBuildDate>Thu, 21 May 2026 22:33:57 +0000</lastBuildDate>
+		<pubDate>Thu, 21 May 2026 22:33:57 +0000</pubDate>
 		<generator>Custom RSS Generator</generator>
 		<ttl>1800</ttl>
+		<item>
+			<title>Workflow Discussion</title>
+			<description>&lt;h1 id=&quot;workflowdiscussion&quot;&gt;Workflow Discussion&lt;/h1&gt;
+
+&lt;p&gt;2026&amp;#8211;04&amp;#8211;12&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/nvim-config&quot;&gt;Neovim Config&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sowhatmakesagoodworkflow&quot;&gt;So what makes a good workflow?&lt;/h2&gt;</description>
+			<link>https://noodl3r.github.io//Workflow-Discussion</link>
+			<guid isPermaLink="false">https://noodl3r.github.io//Workflow-Discussion</guid>
+			<pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+		</item>
 		<item>
 			<title>TMUX Sessionizing!</title>
 			<description>&lt;h1 id=&quot;tmuxsessionizing&quot;&gt;TMUX Sessionizing!&lt;/h1&gt;

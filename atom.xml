@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Hi, I'm Dylan</title>
 	<link href="https://noodl3r.github.io//atom.xml" rel="self" />
-	<updated>2026-05-21T14:41:04Z</updated>
+	<updated>2026-05-21T18:33:57Z</updated>
 	<author>
 		<name>Noodl3r</name>
 	</author>
 	<id>https://noodl3r.github.io/,2024-01-19:default-atom-feed/</id>
+	<entry>
+		<title>Workflow Discussion</title>
+		<content type="html">&lt;h1 id=&quot;workflowdiscussion&quot;&gt;Workflow Discussion&lt;/h1&gt;
+
+&lt;p&gt;2026&amp;#8211;04&amp;#8211;12&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/nvim-config&quot;&gt;Neovim Config&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sowhatmakesagoodworkflow&quot;&gt;So what makes a good workflow?&lt;/h2&gt;</content>
+		<link href="https://noodl3r.github.io//Workflow-Discussion"/>
+		<id>https://noodl3r.github.io//Workflow-Discussion</id>
+		<updated>2026-04-12T10:00:00Z</updated>
+		<published>2026-04-12T10:00:00Z</published>
+	</entry>
 	<entry>
 		<title>TMUX Sessionizing!</title>
 		<content type="html">&lt;h1 id=&quot;tmuxsessionizing&quot;&gt;TMUX Sessionizing!&lt;/h1&gt;
