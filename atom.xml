@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Hi, I'm Dylan</title>
 	<link href="https://noodl3r.github.io//atom.xml" rel="self" />
-	<updated>2026-05-20T23:01:07Z</updated>
+	<updated>2026-05-20T23:38:21Z</updated>
 	<author>
 		<name>Noodl3r</name>
 	</author>
@@ -15,7 +15,7 @@
 
 &lt;h2 id=&quot;muxandmotivation&quot;&gt;Mux and motivation&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/Tang-Nano-9k&quot;&gt; Link to all code &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/tmux-sessionizer&quot;&gt; Link to all code &lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;#8217;ve always used a ton of bash scripts for my main work flows. From generating homework templates from my LaTeX days to parsing webpages to form my local homework due deadline calenders. But recently as my &lt;a href=&quot;https://www.pcmag.com/reviews/dell-inspiron-16-2-in-1-7640?test_uuid=06f2t2mKxAWPbc1xmAn5J4t&amp;amp;test_variant=B&quot;&gt;Inpirion&lt;/a&gt; has begun dying a slow and painful death after 3 years of use, new problems have emerged.&lt;/p&gt;
 
