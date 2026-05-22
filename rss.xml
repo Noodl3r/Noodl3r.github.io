@@ -4,8 +4,8 @@
 		<title>Hi, I'm Dylan</title>
 		<link>dylansh.dev/rss.xml</link>
 		<description>Feed description here</description>
-		<lastBuildDate>Fri, 22 May 2026 08:30:26 +0000</lastBuildDate>
-		<pubDate>Fri, 22 May 2026 08:30:26 +0000</pubDate>
+		<lastBuildDate>Fri, 22 May 2026 08:52:13 +0000</lastBuildDate>
+		<pubDate>Fri, 22 May 2026 08:52:13 +0000</pubDate>
 		<generator>Custom RSS Generator</generator>
 		<ttl>1800</ttl>
 		<item>
@@ -147,7 +147,9 @@ Whenever I wanted to test another change or breakout window it would require ton
 &lt;p&gt;The script presumes that in each directory under your dev, you have one project that will contain one session. If there&amp;#8217;s already a session , it&amp;#8217;ll attach to the old one, and if there isn&amp;#8217;t it&amp;#8217;ll initialize one at the project&amp;#8217;s root. You&amp;#8217;re also able to call from within sessions to other sessions and it&amp;#8217;ll handle detaching before attaching very elegantly.&lt;/p&gt;
 
 &lt;p&gt;Here&amp;#8217;s an image of the script being called as a tmux-popup :
-&lt;img src=&quot;https://img.dylansh.dev/2026-05-22_03-17.webp&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;</description>
+&lt;img src=&quot;https://img.dylansh.dev/2026-05-22_03-17.webp&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The script is also able to add new local directories and sessions. But it most notably has the ability to pull from github / codeberg and clone locally. But that write up must be done later!&lt;/p&gt;</description>
 			<link>dylansh.dev/Tmux-Sessionizer</link>
 			<guid isPermaLink="false">dylansh.dev/Tmux-Sessionizer</guid>
 			<pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
