@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Hi, I'm Dylan</title>
 	<link href="https://noodl3r.github.io//atom.xml" rel="self" />
-	<updated>2026-05-22T00:09:33Z</updated>
+	<updated>2026-05-22T00:11:18Z</updated>
 	<author>
 		<name>Noodl3r</name>
 	</author>
@@ -16,8 +16,6 @@
 &lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/nvim-config&quot;&gt;Neovim Config&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;sowhatmakesagoodworkflow&quot;&gt;So what makes a good workflow?&lt;/h2&gt;
-
-&lt;p&gt;The main question that must be answered when writing a workflow is what&amp;#8217;s the goal?&lt;/p&gt;
 
 &lt;p&gt;My main function for this work flow follows a couple of guidelines :&lt;/p&gt;
 

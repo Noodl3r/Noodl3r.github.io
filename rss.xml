@@ -4,8 +4,8 @@
 		<title>Hi, I'm Dylan</title>
 		<link>https://noodl3r.github.io//rss.xml</link>
 		<description>Feed description here</description>
-		<lastBuildDate>Fri, 22 May 2026 04:09:33 +0000</lastBuildDate>
-		<pubDate>Fri, 22 May 2026 04:09:33 +0000</pubDate>
+		<lastBuildDate>Fri, 22 May 2026 04:11:18 +0000</lastBuildDate>
+		<pubDate>Fri, 22 May 2026 04:11:18 +0000</pubDate>
 		<generator>Custom RSS Generator</generator>
 		<ttl>1800</ttl>
 		<item>
@@ -17,8 +17,6 @@
 &lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/nvim-config&quot;&gt;Neovim Config&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;sowhatmakesagoodworkflow&quot;&gt;So what makes a good workflow?&lt;/h2&gt;
-
-&lt;p&gt;The main question that must be answered when writing a workflow is what&amp;#8217;s the goal?&lt;/p&gt;
 
 &lt;p&gt;My main function for this work flow follows a couple of guidelines :&lt;/p&gt;
 
