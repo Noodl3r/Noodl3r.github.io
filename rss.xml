@@ -4,8 +4,8 @@
 		<title>Hi, I'm Dylan</title>
 		<link>https://noodl3r.github.io//rss.xml</link>
 		<description>Feed description here</description>
-		<lastBuildDate>Thu, 21 May 2026 22:33:57 +0000</lastBuildDate>
-		<pubDate>Thu, 21 May 2026 22:33:57 +0000</pubDate>
+		<lastBuildDate>Fri, 22 May 2026 01:06:12 +0000</lastBuildDate>
+		<pubDate>Fri, 22 May 2026 01:06:12 +0000</pubDate>
 		<generator>Custom RSS Generator</generator>
 		<ttl>1800</ttl>
 		<item>
@@ -16,7 +16,49 @@
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/nvim-config&quot;&gt;Neovim Config&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;sowhatmakesagoodworkflow&quot;&gt;So what makes a good workflow?&lt;/h2&gt;</description>
+&lt;h2 id=&quot;sowhatmakesagoodworkflow&quot;&gt;So what makes a good workflow?&lt;/h2&gt;
+
+&lt;p&gt;The main question that must be answered when writing a workflow is what&amp;#8217;s the goal?&lt;/p&gt;
+
+&lt;p&gt;My main function for this work flow follows a couple of guidelines :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Speed, everything should be one or two key presses away.&lt;/li&gt;
+&lt;li&gt;Durability, everything must be consistent and durable to changes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;text-align:center;&quot;/&gt;
+&lt;col style=&quot;text-align:center;&quot;/&gt;
+&lt;/colgroup&gt;
+
+&lt;thead&gt;
+&lt;tr&gt;
+	&lt;th style=&quot;text-align:center;&quot;&gt; Problem &lt;/th&gt;
+	&lt;th style=&quot;text-align:center;&quot;&gt; Technology &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; Windows &lt;/td&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; I3 &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; Text Editing &lt;/td&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; Neovim &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; Terminals &lt;/td&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; Kitty &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; Sessions &lt;/td&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; Tmux &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description>
 			<link>https://noodl3r.github.io//Workflow-Discussion</link>
 			<guid isPermaLink="false">https://noodl3r.github.io//Workflow-Discussion</guid>
 			<pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
@@ -31,7 +73,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/tmux-sessionizer&quot;&gt; Link to all code &lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=p3OT8HiZp40&quot;&gt;Video demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ki8UuiB_sjY&quot;&gt;Video demo&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;#8217;ve always used a ton of bash scripts for my main work flows. From generating homework templates from my LaTeX days to parsing webpages to form my local homework due deadline calenders. But recently as my &lt;a href=&quot;https://www.pcmag.com/reviews/dell-inspiron-16-2-in-1-7640?test_uuid=06f2t2mKxAWPbc1xmAn5J4t&amp;amp;test_variant=B&quot;&gt;Inpirion&lt;/a&gt; has begun dying a slow and painful death after 3 years of use, new problems have emerged.&lt;/p&gt;
 
