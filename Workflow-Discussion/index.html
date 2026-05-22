@@ -51,13 +51,38 @@
 
 <p>So here&#8217;s the stack I&#8217;ve settled on :</p>
 
-<pre><code>                | Problem         | Solution   |
-                | :---:        | :---:  |
-                | Windows      | i3[^1] |
-                | Text Editing | Neovim |
-                | Terminals    | Kitty  | 
-                | Sessions     | Tmux   |
-</code></pre>
+<table>
+<colgroup>
+<col style="text-align:center;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:center;"> Problem  </th>
+	<th style="text-align:center;"> Solution </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:center;"> Windows  </td>
+	<td style="text-align:center;"> i3<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><sup>1</sup></a>  </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Text Editing </td>
+	<td style="text-align:center;"> Neovim  </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Terminals </td>
+	<td style="text-align:center;"> Kitty  </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Sessions  </td>
+	<td style="text-align:center;"> Tmux  </td>
+</tr>
+</tbody>
+</table>
 
 <p>After experimenting with a few window management options like <a href="https://github.com/oxwm/oxwm">OXWM</a>, <a href="https://dwm.suckless.org/">DWM</a>, and <a href="https://dwm.suckless.org/">Hyprland</a> I&#8217;d ultimately end up settling on i3. For a couple reasons :</p>
 
@@ -73,6 +98,17 @@ Whenever I wanted to test another change or breakout window it would require ton
 <p>There&#8217;s not much of a reason for kitty, it was honestly the first terminal emulator I used and it always worked well. Never really found a reason to go out and find a new terminal emulator. It also has a very nice color api!</p>
 
 <p>Tmux is used for 2 things, multiplexing in kitty and session persistence. I use the splitting in Tmux because it handles the text movements and artifacting even better than the native panes. But the main benefit of Tmux comes from it&#8217;s session persistence combined with searchable sessions. I write extensively about this in my <a href="/Tmux-Sessionizer">post here</a></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>Much to the chagrin of wayland loving John and others <a href="#fnref:1" title="return to body" class="reversefootnote">&#160;&#8617;&#xfe0e;</a></p>
+</li>
+
+</ol>
+</div>
 <footer role="contentinfo">
   <!-- <hr /> -->
   <!-- <h3 id="menu">Menu Navigation</h3> -->
