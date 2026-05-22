@@ -48,8 +48,10 @@
 
 <ul>
 <li>Speed, everything should be one or two key presses away.</li>
-<li>Durability, everything must be consistent and durable to changes.</li>
+<li>Durability, everything must be consistent and resilient to changes.</li>
 </ul>
+
+<p>So here&#8217;s the stack I&#8217;ve settled on :</p>
 
 <table>
 <colgroup>
@@ -59,15 +61,15 @@
 
 <thead>
 <tr>
-	<th style="text-align:center;"> Problem </th>
-	<th style="text-align:center;"> Technology </th>
+	<th style="text-align:center;"> Task </th>
+	<th style="text-align:center;"> Tech </th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
 	<td style="text-align:center;"> Windows </td>
-	<td style="text-align:center;"> I3 </td>
+	<td style="text-align:center;"> i3<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><sup>1</sup></a> </td>
 </tr>
 <tr>
 	<td style="text-align:center;"> Text Editing </td>
@@ -83,6 +85,32 @@
 </tr>
 </tbody>
 </table>
+
+<p>After experimenting with a few window management options like <a href="https://github.com/oxwm/oxwm">OXWM</a>, <a href="https://dwm.suckless.org/">DWM</a>, and <a href="https://dwm.suckless.org/">Hyprland</a> I&#8217;d ultimately end up settling on i3. For a couple reasons :</p>
+
+<ul>
+<li>i3 is so simple to configure, DWM required tons of recompilation and was thus incredibly slow to iterate with.
+Whenever I wanted to test another change or breakout window it would require tons of patching and modification in <a href="https://wiki.archlinux.org/title/Xephyr">Xephyr</a>. I3 on the other hand allows for 90% of it&#8217;s config to be done on a singular file and it&#8217;s api is incredibly accessible for simple shell scripting to control the rest of it&#8217;s behavior.</li>
+<li>I dislike wayland because it&#8217;s too new for not much gain, the time I&#8217;d need to invest into learning wayland doesn&#8217;t seem to offer many real advantages. Sorry <a href="https://wiki.archlinux.org/title/Xephyr">Niri fans</a></li>
+<li>The tiling on i3 just flows best with my way of thinking, especially with a small autotiling script I wrote. The manager allows for a great mix of program based workspace pinning, automatic tiling, and gaps / vanity features with <a href="https://github.com/yshui/picom">picom</a></li>
+</ul>
+
+<p>Using Neovim follows pretty intuitively. I am not smart enough to use emacs, and large electron based apps like vscode are terrible for battery, performance, and <strong>aura</strong>.</p>
+
+<p>There&#8217;s not much of a reason for kitty, it was honestly the first terminal emulator I used and it always worked well. Never really found a reason to go out and find a new terminal emulator. It also has a very nice color api!</p>
+
+<p>Tmux is used for 2 things, multiplexing in kitty and session persistence. I use the splitting in Tmux because it handles the text movements and artifacting even better than the native panes. But the main benefit of Tmux comes from it&#8217;s session persistence combined with searchable sessions. I write extensively about this in my <a href="/Tmux-Sessionizer">post here</a></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>Much to the chagrin of wayland loving John and others <a href="#fnref:1" title="return to body" class="reversefootnote">&#160;&#8617;&#xfe0e;</a></p>
+</li>
+
+</ol>
+</div>
 <footer role="contentinfo">
   <!-- <hr /> -->
   <!-- <h3 id="menu">Menu Navigation</h3> -->

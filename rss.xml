@@ -4,8 +4,8 @@
 		<title>Hi, I'm Dylan</title>
 		<link>https://noodl3r.github.io//rss.xml</link>
 		<description>Feed description here</description>
-		<lastBuildDate>Fri, 22 May 2026 01:06:12 +0000</lastBuildDate>
-		<pubDate>Fri, 22 May 2026 01:06:12 +0000</pubDate>
+		<lastBuildDate>Fri, 22 May 2026 04:05:23 +0000</lastBuildDate>
+		<pubDate>Fri, 22 May 2026 04:05:23 +0000</pubDate>
 		<generator>Custom RSS Generator</generator>
 		<ttl>1800</ttl>
 		<item>
@@ -24,8 +24,10 @@
 
 &lt;ul&gt;
 &lt;li&gt;Speed, everything should be one or two key presses away.&lt;/li&gt;
-&lt;li&gt;Durability, everything must be consistent and durable to changes.&lt;/li&gt;
+&lt;li&gt;Durability, everything must be consistent and resilient to changes.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;So here&amp;#8217;s the stack I&amp;#8217;ve settled on :&lt;/p&gt;
 
 &lt;table&gt;
 &lt;colgroup&gt;
@@ -35,15 +37,15 @@
 
 &lt;thead&gt;
 &lt;tr&gt;
-	&lt;th style=&quot;text-align:center;&quot;&gt; Problem &lt;/th&gt;
-	&lt;th style=&quot;text-align:center;&quot;&gt; Technology &lt;/th&gt;
+	&lt;th style=&quot;text-align:center;&quot;&gt; Task &lt;/th&gt;
+	&lt;th style=&quot;text-align:center;&quot;&gt; Tech &lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
 	&lt;td style=&quot;text-align:center;&quot;&gt; Windows &lt;/td&gt;
-	&lt;td style=&quot;text-align:center;&quot;&gt; I3 &lt;/td&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; i3&lt;a href=&quot;#fn:1&quot; id=&quot;fnref:1&quot; title=&quot;see footnote&quot; class=&quot;footnote&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 	&lt;td style=&quot;text-align:center;&quot;&gt; Text Editing &lt;/td&gt;
@@ -58,7 +60,33 @@
 	&lt;td style=&quot;text-align:center;&quot;&gt; Tmux &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</description>
+&lt;/table&gt;
+
+&lt;p&gt;After experimenting with a few window management options like &lt;a href=&quot;https://github.com/oxwm/oxwm&quot;&gt;OXWM&lt;/a&gt;, &lt;a href=&quot;https://dwm.suckless.org/&quot;&gt;DWM&lt;/a&gt;, and &lt;a href=&quot;https://dwm.suckless.org/&quot;&gt;Hyprland&lt;/a&gt; I&amp;#8217;d ultimately end up settling on i3. For a couple reasons :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;i3 is so simple to configure, DWM required tons of recompilation and was thus incredibly slow to iterate with.
+Whenever I wanted to test another change or breakout window it would require tons of patching and modification in &lt;a href=&quot;https://wiki.archlinux.org/title/Xephyr&quot;&gt;Xephyr&lt;/a&gt;. I3 on the other hand allows for 90% of it&amp;#8217;s config to be done on a singular file and it&amp;#8217;s api is incredibly accessible for simple shell scripting to control the rest of it&amp;#8217;s behavior.&lt;/li&gt;
+&lt;li&gt;I dislike wayland because it&amp;#8217;s too new for not much gain, the time I&amp;#8217;d need to invest into learning wayland doesn&amp;#8217;t seem to offer many real advantages. Sorry &lt;a href=&quot;https://wiki.archlinux.org/title/Xephyr&quot;&gt;Niri fans&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The tiling on i3 just flows best with my way of thinking, especially with a small autotiling script I wrote. The manager allows for a great mix of program based workspace pinning, automatic tiling, and gaps / vanity features with &lt;a href=&quot;https://github.com/yshui/picom&quot;&gt;picom&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Using Neovim follows pretty intuitively. I am not smart enough to use emacs, and large electron based apps like vscode are terrible for battery, performance, and &lt;strong&gt;aura&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;There&amp;#8217;s not much of a reason for kitty, it was honestly the first terminal emulator I used and it always worked well. Never really found a reason to go out and find a new terminal emulator. It also has a very nice color api!&lt;/p&gt;
+
+&lt;p&gt;Tmux is used for 2 things, multiplexing in kitty and session persistence. I use the splitting in Tmux because it handles the text movements and artifacting even better than the native panes. But the main benefit of Tmux comes from it&amp;#8217;s session persistence combined with searchable sessions. I write extensively about this in my &lt;a href=&quot;/Tmux-Sessionizer&quot;&gt;post here&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn:1&quot;&gt;
+&lt;p&gt;Much to the chagrin of wayland loving John and others &lt;a href=&quot;#fnref:1&quot; title=&quot;return to body&quot; class=&quot;reversefootnote&quot;&gt;&amp;#160;&amp;#8617;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;</description>
 			<link>https://noodl3r.github.io//Workflow-Discussion</link>
 			<guid isPermaLink="false">https://noodl3r.github.io//Workflow-Discussion</guid>
 			<pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
