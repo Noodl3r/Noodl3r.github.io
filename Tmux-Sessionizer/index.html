@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="dark" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="data:," />
-    <title>TMUX Sessionizing!</title>
+    <title>Tmux sessionizing</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
@@ -34,11 +34,11 @@
 
   <main></main>
 </html>
-<h1 id="tmuxsessionizing">TMUX Sessionizing!</h1>
+<h1 id="tmuxsessionizing">Tmux sessionizing</h1>
 
 <p>2026&#8211;05&#8211;20</p>
 
-<h2 id="muxandmotivation">Mux and motivation</h2>
+<h2 id="backingmotivation">Backing motivation</h2>
 
 <p><a href="https://github.com/Noodl3r/tmux-sessionizer"> Link to all code </a></p>
 
@@ -73,8 +73,24 @@
 <li>Paths are cleaned up to be shorter and cleaner</li>
 <li>You can directly clone any codeberg or gitlab repo just by directly entering it into the fzf field, where you can then select any destination from the home / current directory.</li>
 <li>If an active session exists in the parent directory to one you are looking,</li>
-<li>No need for a config file!</li>
+<li>No need for a con fig file!</li>
 </ul>
+
+<h2 id="visualwalkthrough">Visual Walk Through</h2>
+
+<p>So let&#8217;s see some of this, here you&#8217;ll see how I edit the website from my terminal. This is a persistent session that runs constantly on my laptop and allows me to constantly locally build and iterate on the blog.</p>
+
+<p>When using my spits, I generally have one pane that runs / monitors the server I&#8217;m working on, In this instance the localhost serving the site, and a second that controls my version control in the lower right.Then neovim / my text editor runs on the main pane in the middle. Many people have told me that this is suboptimal.</p>
+
+<p>So here&#8217;s the visual of the splits :
+<img src="https://img.dylansh.dev/2026-05-22_04-09.webp" alt="Image of TMUX Splits" /></p>
+
+<p>Then we cover the wonderful sessionizing script linked at the top of the article. Essentially it requires you declare a few directories you have interest in as well as a default directory you&#8217;d like new repos / sessions to be declared in. In my case, it&#8217;s <code>$HOME/dev/</code> for reusability and portability.</p>
+
+<p>The script presumes that in each directory under your dev, you have one project that will contain one session. If there&#8217;s already a session , it&#8217;ll attach to the old one, and if there isn&#8217;t it&#8217;ll initialize one at the project&#8217;s root. You&#8217;re also able to call from within sessions to other sessions and it&#8217;ll handle detaching before attaching very elegantly.</p>
+
+<p>Here&#8217;s an image of the script being called as a tmux-popup :
+<img src="https://img.dylansh.dev/2026-05-22_03-17.webp" alt="Image" /></p>
 <footer role="contentinfo">
   <!-- <hr /> -->
   <!-- <h3 id="menu">Menu Navigation</h3> -->

@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Hi, I'm Dylan</title>
 	<link href="dylansh.dev/atom.xml" rel="self" />
-	<updated>2026-05-22T02:44:09Z</updated>
+	<updated>2026-05-22T04:30:26Z</updated>
 	<author>
 		<name>Noodl3r</name>
 	</author>
 	<id>dylansh.dev,2024-01-19:default-atom-feed/</id>
 	<entry>
-		<title>Workflow Discussion</title>
-		<content type="html">&lt;h1 id=&quot;workflowdiscussion&quot;&gt;Workflow Discussion&lt;/h1&gt;
+		<title>Workflow discussion</title>
+		<content type="html">&lt;h1 id=&quot;workflowdiscussion&quot;&gt;Workflow discussion&lt;/h1&gt;
 
 &lt;p&gt;2026&amp;#8211;04&amp;#8211;12&lt;/p&gt;
 
@@ -68,7 +68,7 @@ Whenever I wanted to test another change or breakout window it would require ton
 &lt;li&gt;The tiling on i3 just flows best with my way of thinking, especially with a small autotiling script I wrote. The manager allows for a great mix of program based workspace pinning, automatic tiling, and gaps / vanity features with &lt;a href=&quot;https://github.com/yshui/picom&quot;&gt;picom&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Using Neovim follows pretty intuitively. I am not smart enough to use emacs, and large electron based apps like vscode are terrible for battery, performance, and &lt;strong&gt;aura&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Using Neovim follows pretty intuitively. I am not smart enough to use emacs, and large electron based apps like vscode are terrible for battery, performance, and &lt;strong&gt;aura&lt;/strong&gt;. I&amp;#8217;ve included my repo that contains a few interesting editions etc, I&amp;#8217;ll likely write a more indepth explanation of this in the future.&lt;/p&gt;
 
 &lt;p&gt;There&amp;#8217;s not much of a reason for kitty, it was honestly the first terminal emulator I used and it always worked well. Never really found a reason to go out and find a new terminal emulator. It also has a very nice color api!&lt;/p&gt;
 
@@ -90,12 +90,12 @@ Whenever I wanted to test another change or breakout window it would require ton
 		<published>2026-04-12T10:00:00Z</published>
 	</entry>
 	<entry>
-		<title>TMUX Sessionizing!</title>
-		<content type="html">&lt;h1 id=&quot;tmuxsessionizing&quot;&gt;TMUX Sessionizing!&lt;/h1&gt;
+		<title>Tmux sessionizing</title>
+		<content type="html">&lt;h1 id=&quot;tmuxsessionizing&quot;&gt;Tmux sessionizing&lt;/h1&gt;
 
 &lt;p&gt;2026&amp;#8211;05&amp;#8211;20&lt;/p&gt;
 
-&lt;h2 id=&quot;muxandmotivation&quot;&gt;Mux and motivation&lt;/h2&gt;
+&lt;h2 id=&quot;backingmotivation&quot;&gt;Backing motivation&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/tmux-sessionizer&quot;&gt; Link to all code &lt;/a&gt;&lt;/p&gt;
 
@@ -130,8 +130,24 @@ Whenever I wanted to test another change or breakout window it would require ton
 &lt;li&gt;Paths are cleaned up to be shorter and cleaner&lt;/li&gt;
 &lt;li&gt;You can directly clone any codeberg or gitlab repo just by directly entering it into the fzf field, where you can then select any destination from the home / current directory.&lt;/li&gt;
 &lt;li&gt;If an active session exists in the parent directory to one you are looking,&lt;/li&gt;
-&lt;li&gt;No need for a config file!&lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;li&gt;No need for a con fig file!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;visualwalkthrough&quot;&gt;Visual Walk Through&lt;/h2&gt;
+
+&lt;p&gt;So let&amp;#8217;s see some of this, here you&amp;#8217;ll see how I edit the website from my terminal. This is a persistent session that runs constantly on my laptop and allows me to constantly locally build and iterate on the blog.&lt;/p&gt;
+
+&lt;p&gt;When using my spits, I generally have one pane that runs / monitors the server I&amp;#8217;m working on, In this instance the localhost serving the site, and a second that controls my version control in the lower right.Then neovim / my text editor runs on the main pane in the middle. Many people have told me that this is suboptimal.&lt;/p&gt;
+
+&lt;p&gt;So here&amp;#8217;s the visual of the splits :
+&lt;img src=&quot;https://img.dylansh.dev/2026-05-22_04-09.webp&quot; alt=&quot;Image of TMUX Splits&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then we cover the wonderful sessionizing script linked at the top of the article. Essentially it requires you declare a few directories you have interest in as well as a default directory you&amp;#8217;d like new repos / sessions to be declared in. In my case, it&amp;#8217;s &lt;code&gt;$HOME/dev/&lt;/code&gt; for reusability and portability.&lt;/p&gt;
+
+&lt;p&gt;The script presumes that in each directory under your dev, you have one project that will contain one session. If there&amp;#8217;s already a session , it&amp;#8217;ll attach to the old one, and if there isn&amp;#8217;t it&amp;#8217;ll initialize one at the project&amp;#8217;s root. You&amp;#8217;re also able to call from within sessions to other sessions and it&amp;#8217;ll handle detaching before attaching very elegantly.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s an image of the script being called as a tmux-popup :
+&lt;img src=&quot;https://img.dylansh.dev/2026-05-22_03-17.webp&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;</content>
 		<link href="dylansh.dev/Tmux-Sessionizer"/>
 		<id>dylansh.dev/Tmux-Sessionizer</id>
 		<updated>2026-05-20T10:00:00Z</updated>

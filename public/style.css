@@ -17,8 +17,12 @@ body {
 }
 
 img {
-  max-width: 80%;
+  display: block;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 pre {
   border: 1px solid;
   overflow: auto;
