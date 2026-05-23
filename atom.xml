@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Hi, I'm Dylan</title>
 	<link href="dylansh.dev/atom.xml" rel="self" />
-	<updated>2026-05-22T21:02:02Z</updated>
+	<updated>2026-05-22T21:42:01Z</updated>
 	<author>
 		<name>Noodl3r</name>
 	</author>
@@ -159,7 +159,7 @@ Whenever I wanted to test another change or breakout window it would require ton
 		<title>Starting with the Tang 9k FPGA.</title>
 		<content type="html">&lt;h1 id=&quot;startingwiththetang9kfpga.&quot;&gt;Starting with the Tang 9k FPGA.&lt;/h1&gt;
 
-&lt;p&gt;2026&amp;#8211;03&amp;#8211;23&lt;/p&gt;
+&lt;p&gt;2025&amp;#8211;09&amp;#8211;23&lt;/p&gt;
 
 &lt;h2 id=&quot;firstpurchasesandinspiration:&quot;&gt;First Purchases and Inspiration :&lt;/h2&gt;
 
@@ -174,14 +174,14 @@ Whenever I wanted to test another change or breakout window it would require ton
 &lt;p&gt;I&amp;#8217;ll start by implementing the heavily reduced instruction set defined in the tutorials by &lt;a href=&quot;https://learn.lushaylabs.com/getting-setup-with-the-tang-nano-9k/&quot;&gt;Lushay Labs&lt;/a&gt;.&lt;/p&gt;</content>
 		<link href="dylansh.dev/starting-with-fpga"/>
 		<id>dylansh.dev/starting-with-fpga</id>
-		<updated>2026-03-23T10:00:00Z</updated>
-		<published>2026-03-23T10:00:00Z</published>
+		<updated>2025-09-23T10:00:00Z</updated>
+		<published>2025-09-23T10:00:00Z</published>
 	</entry>
 	<entry>
 		<title>The first day with the Tang Nano 9K</title>
 		<content type="html">&lt;h1 id=&quot;thefirstdaywiththetangnano9k&quot;&gt;The first day with the Tang Nano 9K&lt;/h1&gt;
 
-&lt;p&gt;2026&amp;#8211;03&amp;#8211;28&lt;/p&gt;
+&lt;p&gt;2025&amp;#8211;09&amp;#8211;28&lt;/p&gt;
 
 &lt;h2 id=&quot;gettingstarted&quot;&gt;Getting started!&lt;/h2&gt;
 
@@ -192,7 +192,7 @@ Whenever I wanted to test another change or breakout window it would require ton
 &lt;p&gt;But in other news, I was able to get the whole thing working and get a nice blink / counter on the FPGA. Next up will be properly soldering it and tying it to some LED&amp;#8217;s on a breadboard.&lt;/p&gt;</content>
 		<link href="dylansh.dev/1st-day-with-fpga"/>
 		<id>dylansh.dev/1st-day-with-fpga</id>
-		<updated>2026-03-28T10:00:00Z</updated>
-		<published>2026-03-28T10:00:00Z</published>
+		<updated>2025-09-28T10:00:00Z</updated>
+		<published>2025-09-28T10:00:00Z</published>
 	</entry>
 </feed>
