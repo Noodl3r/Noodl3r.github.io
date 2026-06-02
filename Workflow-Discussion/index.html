@@ -38,8 +38,6 @@
 
 <p>2026&#8211;04&#8211;12</p>
 
-<p><a href="https://github.com/Noodl3r/nvim-config">Neovim Config</a></p>
-
 <h2 id="sowhatmakesagoodworkflow">So what makes a good workflow?</h2>
 
 <p>My main function for this work flow follows a couple of guidelines :</p>
@@ -49,7 +47,7 @@
 <li>Durability, everything must be consistent and resilient to changes.</li>
 </ul>
 
-<p>So here&#8217;s the stack I&#8217;ve settled on :</p>
+<p>So what are the specific aspects of the workflow that we have to optimize?</p>
 
 <table>
 <colgroup>
@@ -59,27 +57,27 @@
 
 <thead>
 <tr>
-	<th style="text-align:center;"> Problem  </th>
+	<th style="text-align:center;"> Scope  </th>
 	<th style="text-align:center;"> Solution </th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
+	<td style="text-align:center;"> OS. </td>
+	<td style="text-align:center;"> Debian </td>
+</tr>
+<tr>
 	<td style="text-align:center;"> Windows  </td>
 	<td style="text-align:center;"> i3<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><sup>1</sup></a>  </td>
 </tr>
 <tr>
-	<td style="text-align:center;"> Text Editing </td>
-	<td style="text-align:center;"> Neovim  </td>
-</tr>
-<tr>
-	<td style="text-align:center;"> Terminals </td>
-	<td style="text-align:center;"> Kitty  </td>
-</tr>
-<tr>
 	<td style="text-align:center;"> Sessions  </td>
 	<td style="text-align:center;"> Tmux  </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Text Editing </td>
+	<td style="text-align:center;"> Neovim  </td>
 </tr>
 </tbody>
 </table>
@@ -93,11 +91,9 @@ Whenever I wanted to test another change or breakout window it would require ton
 <li>The tiling on i3 just flows best with my way of thinking, especially with a small autotiling script I wrote. The manager allows for a great mix of program based workspace pinning, automatic tiling, and gaps / vanity features with <a href="https://github.com/yshui/picom">picom</a></li>
 </ul>
 
-<p>Using Neovim follows pretty intuitively. I am not smart enough to use emacs, and large electron based apps like vscode are terrible for battery, performance, and <strong>aura</strong>. At the top of the page you&#8217;ll see the repo that contains my entire single file neovim config. It focuses on simplicity, not breaking out to multiple subdirectories while coming in at under 400 LOC for all behavior. This simplicity allows for quick remedies of breaking changes, which is not possible in larger projects like NvCHAD, and very fast boot times.</p>
-
-<p>There&#8217;s not much of a reason for kitty, it was honestly the first terminal emulator I used and it always worked well. Never really found a reason to go out and find a new terminal emulator. It also has a very nice color api!</p>
-
 <p>Tmux is used for 2 things, multiplexing in kitty and session persistence. I use the splitting in Tmux because it handles the text movements and artifacting even better than the native panes. But the main benefit of Tmux comes from it&#8217;s session persistence combined with searchable sessions. I write extensively about this in my <a href="/Tmux-Sessionizer">post here</a></p>
+
+<p>Using Neovim follows pretty intuitively. I am not smart enough to use emacs<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote"><sup>2</sup></a>, and large electron based apps like vscode are terrible for battery, performance, and <strong>aura</strong>. So this leaves neovim as the main option. It&#8217;s near endless configurability has left allowed me to land at a config I find perfectly usable for nearly all applications. It focuses on simplicity, not breaking out to multiple subdirectories while coming in at under 400 LOC. This simplicity allows for quick remedies of breaking changes, which is not possible in larger projects like NvCHAD, and very fast boot times. You can find the repo here : <a href="https://github.com/Noodl3r/nvim-config">Neovim Config</a>.Note it requires the modern 12.0 standard and won&#8217;t be backwards compatible as it relies on the new vim-plug to simplify plugin management. The use of vim-plug may be slightly &#8220;suboptimal&#8221; in light of lazy loading solutions like lazy or what have you, but these complications don&#8217;t feel meaningful when you&#8217;re already dealing with sub 50 millisecond start times. Eventually I&#8217;ll release a write about about how I edit typst, C, C++ and do basically everything within my minimal neovim config.</p>
 
 <div class="footnotes">
 <hr />
@@ -105,6 +101,10 @@ Whenever I wanted to test another change or breakout window it would require ton
 
 <li id="fn:1">
 <p>Much to the chagrin of wayland loving John and others <a href="#fnref:1" title="return to body" class="reversefootnote">&#160;&#8617;&#xfe0e;</a></p>
+</li>
+
+<li id="fn:2">
+<p>and it doesn&#8217;t even have a good text editor! <a href="#fnref:2" title="return to body" class="reversefootnote">&#160;&#8617;&#xfe0e;</a></p>
 </li>
 
 </ol>

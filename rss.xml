@@ -4,8 +4,8 @@
 		<title>Hi, I'm Dylan</title>
 		<link>dylansh.dev/rss.xml</link>
 		<description>Feed description here</description>
-		<lastBuildDate>Sat, 23 May 2026 07:06:26 +0000</lastBuildDate>
-		<pubDate>Sat, 23 May 2026 07:06:26 +0000</pubDate>
+		<lastBuildDate>Tue, 02 Jun 2026 21:08:35 +0000</lastBuildDate>
+		<pubDate>Tue, 02 Jun 2026 21:08:35 +0000</pubDate>
 		<generator>Custom RSS Generator</generator>
 		<ttl>1800</ttl>
 		<item>
@@ -13,8 +13,6 @@
 			<description>&lt;h1 id=&quot;workflowdiscussion&quot;&gt;Workflow discussion&lt;/h1&gt;
 
 &lt;p&gt;2026&amp;#8211;04&amp;#8211;12&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Noodl3r/nvim-config&quot;&gt;Neovim Config&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;sowhatmakesagoodworkflow&quot;&gt;So what makes a good workflow?&lt;/h2&gt;
 
@@ -25,7 +23,7 @@
 &lt;li&gt;Durability, everything must be consistent and resilient to changes.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;So here&amp;#8217;s the stack I&amp;#8217;ve settled on :&lt;/p&gt;
+&lt;p&gt;So what are the specific aspects of the workflow that we have to optimize?&lt;/p&gt;
 
 &lt;table&gt;
 &lt;colgroup&gt;
@@ -35,27 +33,27 @@
 
 &lt;thead&gt;
 &lt;tr&gt;
-	&lt;th style=&quot;text-align:center;&quot;&gt; Problem  &lt;/th&gt;
+	&lt;th style=&quot;text-align:center;&quot;&gt; Scope  &lt;/th&gt;
 	&lt;th style=&quot;text-align:center;&quot;&gt; Solution &lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; OS. &lt;/td&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; Debian &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 	&lt;td style=&quot;text-align:center;&quot;&gt; Windows  &lt;/td&gt;
 	&lt;td style=&quot;text-align:center;&quot;&gt; i3&lt;a href=&quot;#fn:1&quot; id=&quot;fnref:1&quot; title=&quot;see footnote&quot; class=&quot;footnote&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;  &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-	&lt;td style=&quot;text-align:center;&quot;&gt; Text Editing &lt;/td&gt;
-	&lt;td style=&quot;text-align:center;&quot;&gt; Neovim  &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-	&lt;td style=&quot;text-align:center;&quot;&gt; Terminals &lt;/td&gt;
-	&lt;td style=&quot;text-align:center;&quot;&gt; Kitty  &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 	&lt;td style=&quot;text-align:center;&quot;&gt; Sessions  &lt;/td&gt;
 	&lt;td style=&quot;text-align:center;&quot;&gt; Tmux  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; Text Editing &lt;/td&gt;
+	&lt;td style=&quot;text-align:center;&quot;&gt; Neovim  &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -69,11 +67,9 @@ Whenever I wanted to test another change or breakout window it would require ton
 &lt;li&gt;The tiling on i3 just flows best with my way of thinking, especially with a small autotiling script I wrote. The manager allows for a great mix of program based workspace pinning, automatic tiling, and gaps / vanity features with &lt;a href=&quot;https://github.com/yshui/picom&quot;&gt;picom&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Using Neovim follows pretty intuitively. I am not smart enough to use emacs, and large electron based apps like vscode are terrible for battery, performance, and &lt;strong&gt;aura&lt;/strong&gt;. At the top of the page you&amp;#8217;ll see the repo that contains my entire single file neovim config. It focuses on simplicity, not breaking out to multiple subdirectories while coming in at under 400 LOC for all behavior. This simplicity allows for quick remedies of breaking changes, which is not possible in larger projects like NvCHAD, and very fast boot times.&lt;/p&gt;
-
-&lt;p&gt;There&amp;#8217;s not much of a reason for kitty, it was honestly the first terminal emulator I used and it always worked well. Never really found a reason to go out and find a new terminal emulator. It also has a very nice color api!&lt;/p&gt;
-
 &lt;p&gt;Tmux is used for 2 things, multiplexing in kitty and session persistence. I use the splitting in Tmux because it handles the text movements and artifacting even better than the native panes. But the main benefit of Tmux comes from it&amp;#8217;s session persistence combined with searchable sessions. I write extensively about this in my &lt;a href=&quot;/Tmux-Sessionizer&quot;&gt;post here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Using Neovim follows pretty intuitively. I am not smart enough to use emacs&lt;a href=&quot;#fn:2&quot; id=&quot;fnref:2&quot; title=&quot;see footnote&quot; class=&quot;footnote&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;, and large electron based apps like vscode are terrible for battery, performance, and &lt;strong&gt;aura&lt;/strong&gt;. So this leaves neovim as the main option. It&amp;#8217;s near endless configurability has left allowed me to land at a config I find perfectly usable for nearly all applications. It focuses on simplicity, not breaking out to multiple subdirectories while coming in at under 400 LOC. This simplicity allows for quick remedies of breaking changes, which is not possible in larger projects like NvCHAD, and very fast boot times. You can find the repo here : &lt;a href=&quot;https://github.com/Noodl3r/nvim-config&quot;&gt;Neovim Config&lt;/a&gt;.Note it requires the modern 12.0 standard and won&amp;#8217;t be backwards compatible as it relies on the new vim-plug to simplify plugin management. The use of vim-plug may be slightly &amp;#8220;suboptimal&amp;#8221; in light of lazy loading solutions like lazy or what have you, but these complications don&amp;#8217;t feel meaningful when you&amp;#8217;re already dealing with sub 50 millisecond start times. Eventually I&amp;#8217;ll release a write about about how I edit typst, C, C++ and do basically everything within my minimal neovim config.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
 &lt;hr /&gt;
@@ -81,6 +77,10 @@ Whenever I wanted to test another change or breakout window it would require ton
 
 &lt;li id=&quot;fn:1&quot;&gt;
 &lt;p&gt;Much to the chagrin of wayland loving John and others &lt;a href=&quot;#fnref:1&quot; title=&quot;return to body&quot; class=&quot;reversefootnote&quot;&gt;&amp;#160;&amp;#8617;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn:2&quot;&gt;
+&lt;p&gt;and it doesn&amp;#8217;t even have a good text editor! &lt;a href=&quot;#fnref:2&quot; title=&quot;return to body&quot; class=&quot;reversefootnote&quot;&gt;&amp;#160;&amp;#8617;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;/ol&gt;
@@ -158,7 +158,7 @@ Whenever I wanted to test another change or breakout window it would require ton
 			<title>Starting with the Tang 9k FPGA.</title>
 			<description>&lt;h1 id=&quot;startingwiththetang9kfpga.&quot;&gt;Starting with the Tang 9k FPGA.&lt;/h1&gt;
 
-&lt;p&gt;2025&amp;#8211;09&amp;#8211;23&lt;/p&gt;
+&lt;p&gt;2025&amp;#8211;10&amp;#8211;23&lt;/p&gt;
 
 &lt;h2 id=&quot;firstpurchasesandinspiration:&quot;&gt;First Purchases and Inspiration :&lt;/h2&gt;
 
@@ -173,7 +173,7 @@ Whenever I wanted to test another change or breakout window it would require ton
 &lt;p&gt;I&amp;#8217;ll start by implementing the heavily reduced instruction set defined in the tutorials by &lt;a href=&quot;https://learn.lushaylabs.com/getting-setup-with-the-tang-nano-9k/&quot;&gt;Lushay Labs&lt;/a&gt;.&lt;/p&gt;</description>
 			<link>dylansh.dev/starting-with-fpga</link>
 			<guid isPermaLink="false">dylansh.dev/starting-with-fpga</guid>
-			<pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+			<pubDate>Thu, 23 Oct 2025 00:00:00 +0000</pubDate>
 		</item>
 		<item>
 			<title>The first day with the Tang Nano 9K</title>
